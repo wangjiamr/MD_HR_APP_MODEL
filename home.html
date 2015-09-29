@@ -9,8 +9,11 @@
 		<title>home</title>
 	</head>
 	<body>
+		<header class="header">
+			<span class="Icon Icon-more" id="menu"></span>
+			<p>明道HR</p>
+		</header>
 		<div class="TopBoard" style="background-image: url(img/img1.jpg);">
-			<span class="Icon Icon-more current"></span>
 			<span class="block photo"><img src="img/1.jpg"></span>
 			<p class="aligncenter font17 color-white mart40 p-top15">行走江湖</p>
 			<div class="BottomBar aligncenter font14 color-white">
@@ -103,6 +106,11 @@
 				</tr>
 			</table>
 		</div>
+		<!--下拉的菜单begin-->
+		<div class="menu">
+			
+		</div>
+		<!--下拉的菜单over-->
 	</body>
 	<script src="js/jquery.js"></script>
 	<script type="text/javascript">
@@ -120,6 +128,22 @@
 				clandersize();
 			});
 			
+			$("#menu").off('click').on('click',function(){
+				var $this = $(this),
+					$header = $('.header'),
+					$menu = $('.menu');
+				if($this.hasClass('current')){
+					
+					$this.removeClass('current');
+					$header.removeClass('current');
+					$menu.removeClass('current');
+				}else{
+					
+					$this.addClass('current');
+					$header.addClass('current');
+					$menu.addClass('current');
+				}
+			});
 		});
 	</script>
 </html>
