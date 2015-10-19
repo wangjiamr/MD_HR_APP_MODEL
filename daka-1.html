@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<meta name="apple-touch-fullscreen" content="yes"/>
+		<meta content="black-translucent" name="apple-mobile-web-app-status-bar-style"> 
+		<link rel="stylesheet" type="text/css" href="css/appstyle.css">
+		<title>在线打卡</title>
+	</head>
+	<body style="-webkit-user-select:none;">
+		<header class="header current">
+			<span class="Icon Icon-back"></span>
+			<p>在线打卡</p>
+		</header>
+		<div class="main" title="打卡成功加success">
+			<div class="circle mart30"></div>
+			<div class="circle nobg"><span class="userPhoto"><img src="img/1.jpg"></span></div>
+			<p class="aligncenter font16 mart10">请长按按钮进行打卡</p>
+			<div class="hand current"><span class="handIn"></span></div>
+			<div class="Card">
+				<span class="circleBt"></span>
+				<p class="aligncenter font16 mart35">2015-8-17打卡记录</p>
+				<div class="item font14 mart20">
+					<p>上班打卡</p>
+					<p class="alignright work_on">考勤正常</p>
+					<p class="color-8">2015-8-17 8:55</p>
+				</div>
+				<p class="line mart20"></p>
+				<div class="item noData font14 mart20">
+					<p>下班打卡</p>
+					<p class="alignright"></p>
+					<p class="color-a">尚未打卡</p>
+				</div>
+				<p class="line mart20"></p>
+				<p class="font16 aligncenter p-bt20 p-top15">返回首页</p>
+				<div class="cardBottom"></div>
+			</div>
+		</div>
+	</body>
+	<script src="js/jquery.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			$('.hand').off('touchstart').on('touchstart',function(){
+				var $this = $(this);
+				$this.addClass('current');
+				$('.main').find('.circle:first').addClass('current');
+				setTimeout(function(){
+					$('.main').addClass('success');
+				},5000);
+			});
+		});
+	</script>
+</html>
