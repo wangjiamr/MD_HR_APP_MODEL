@@ -14,9 +14,10 @@
 			<p>工资查询</p>
 		</header>
 		<div class="main">
-			<div class="">
+			<div class="wage_out" title="加current展开工资详细">
 				<ul class="inputList wage wageTitle">
 					<li class="clearfix">
+						<i class="Icon Icon-arrow-t"></i>
 						<span class="lable">税前收入</span>
 						<span class="alignright placeTxt">12,000.00</span>
 					</li>
@@ -40,7 +41,38 @@
 					</li>
 				</ul>
 			</div>
-			
+			<div class="wage_out" title="加current展开工资详细">
+				<ul class="inputList wage wageTitle">
+					<li class="clearfix">
+						<i class="Icon Icon-arrow-t"></i>
+						<span class="lable">税前扣减</span>
+						<span class="alignright placeTxt">12,000.00</span>
+					</li>
+				</ul>
+				<ul class="inputList wage" style="display: ;">
+					<li class="clearfix">
+						<span class="lable">养老保险</span>
+						<span class="alignright placeTxt">8,000.00</span>
+					</li>
+					<li class="clearfix">
+						<span class="lable">医疗保险</span>
+						<span class="alignright placeTxt">3,000.00</span>
+					</li>
+				</ul>
+			</div>
 		</div>
 	</body>
+<script src="js/jquery.js"></script>
+<script type="text/javascript">
+	$(function(){
+		$('.wage_out').off('touchend').on('touchend',function(){
+			var $this = $(this);
+			if($this.hasClass('current')){
+				$this.removeClass('current');
+			}else{
+				$this.addClass('current').siblings().removeClass('current');
+			}
+		});
+	});
+</script>
 </html>
