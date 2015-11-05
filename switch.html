@@ -7,6 +7,16 @@
 		<meta content="black-translucent" name="apple-mobile-web-app-status-bar-style"> 
 		<link rel="stylesheet" type="text/css" href="css/appstyle.css">
 		<title>功能开关</title>
+		<script type="text/javascript">
+			// H5 plus事件处理
+			function plusReady(){
+			}
+			if(window.plus){
+				plusReady();
+			}else{
+				document.addEventListener("plusready",plusReady,false);
+			}
+		</script>
 	</head>
 	<body>
 		<header class="header current">
@@ -57,6 +67,5 @@
 				</li>
 			</ul>
 		</div>
-		<span class="bottomBack aligncenter"><i class="Icon Icon-bt-back"></i></span>
 	</body>
 </html>

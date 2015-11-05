@@ -13,8 +13,14 @@
 			<span class="Icon Icon-back"></span>
 			<p>工资查询</p>
 		</header>
-		<div class="main">
-			<div class="wage_out" title="加current展开工资详细">
+		<div class="main p-top10">
+			<ul class="inputList marbt10">
+				<li class="clearfix">
+					<span class="lable">请选择月份</span>
+					<span class="alignright placeTxt">2014-8</span>
+				</li>
+			</ul>
+			<div class="wage_out current" title="加current展开工资详细">
 				<ul class="inputList wage wageTitle">
 					<li class="clearfix">
 						<i class="Icon Icon-arrow-t"></i>
@@ -41,7 +47,7 @@
 					</li>
 				</ul>
 			</div>
-			<div class="wage_out" title="加current展开工资详细">
+			<div class="wage_out current" title="加current展开工资详细">
 				<ul class="inputList wage wageTitle">
 					<li class="clearfix">
 						<i class="Icon Icon-arrow-t"></i>
@@ -70,7 +76,7 @@
 			if($this.hasClass('current')){
 				$this.removeClass('current');
 			}else{
-				$this.addClass('current').siblings().removeClass('current');
+				$this.addClass('current');
 			}
 		});
 	});
