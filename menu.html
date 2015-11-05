@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<meta name="apple-touch-fullscreen" content="yes"/>
+		<meta content="black-translucent" name="apple-mobile-web-app-status-bar-style"> 
+		<link rel="stylesheet" type="text/css" href="css/appstyle.css">
+		<title>home</title>
+		<script src="js/jquery.js"></script>
+		<script type="text/javascript">
+			// H5 plus事件处理
+			function plusReady(){
+			}
+			if(window.plus){
+				plusReady();
+			}else{
+				document.addEventListener("plusready",plusReady,false);
+			}
+			// 创建并显示新窗口
+			function create(){
+				var w = plus.webview.create( "switch.html","switchPage", {
+						top: "0px",
+						bottom: "60px"
+					});
+				w.show("slide-in-right"); // 显示窗口
+			}
+			$(function(){
+				$('.switch_page').off('click').on('click',function(){
+					setTimeout(create(),1000);
+				});
+//				$('.bottomBack').off('click').on('click',function(){
+//					WebviewObject plus.webview.getWebviewById('switchPage').hide("slide-out-top");
+//				});
+			});
+		</script>
+	</head>
+	<body>
+		<!--下拉的菜单begin-->
+		<div class="menu current">
+			<ul class="nav mart50 p-top20">
+				<li>个人设置</li>
+				<li>我的假期</li>
+				<li>消息提醒</li>
+				<li class="switch_page">功能开关</li>
+			</ul>
+			<div class="Version aligncenter color-8">
+				<p>Version 1.0.0</p>
+				<p>- 明道出品 -</p>
+			</div>
+			<span class="bottomBack aligncenter"><i class="Icon Icon-bt-back"></i></span>
+		</div>
+		<!--下拉的菜单over-->
+	</body>
+</html>
