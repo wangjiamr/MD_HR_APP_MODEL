@@ -254,19 +254,19 @@ label.text {
 	margin-left: 15px!important;
 }
 .marl20 {
-	margin-left: 1!important;
+	margin-left: 20px!important;
 }
 .marl25 {
-	margin-left: 2.08rem!important;
+	margin-left: 25px!important;
 }
 .marl30 {
-	margin-left: 2.5rem!important;
+	margin-left: 30px!important;
 }
 .marl60 {
-	margin-left: 5rem!important;
+	margin-left: 60px!important;
 }
 .marbt10{
-	margin-bottom:0.83rem;
+	margin-bottom:10px;
 }
 .color-black {
 	color: #000;
@@ -509,10 +509,8 @@ label.text {
 }
 .Icon-prev,
 .Icon-next {
-	width:3.67rem;
-	height:3.67rem;
 	background-image: url(../img/prev.png);
-	background-size: 2.08rem;
+	background-size: 25px;
 	top: 0;
 	left: 0;
 }
@@ -535,9 +533,9 @@ label.text {
 	width: 3.33rem;
 	height: 3.33rem;
 	background-image: url(../img/icon-1.png);
-	background-size: 97%;
+	background-size: 100%;
 	margin: 0 auto;
-	margin-bottom: 0.5rem;
+	margin-bottom: 0.41rem;
 }
 .Icon-2 {
 	background-image: url(../img/icon-2.png);
@@ -555,14 +553,14 @@ label.text {
 	background-size: 22px;
 }
 .Icon-arrow-t {
-	width: 1rem;
-	height: 1rem;
+	width: 12px;
+	height: 12px;
 	background-image: url(../img/arrow-t2.png);
 	background-size: 100%;
 	position: absolute;
 	top: 50%;
-	left: -2.08rem;
-	margin-top: -0.5rem;
+	left: -25px;
+	margin-top: -6px;
 	transform: rotate(180deg);
 	-webkit-transform: rotate(180deg);
 	transition: 0.3s;
@@ -570,11 +568,11 @@ label.text {
 }
 .icon-circle {
 	display: block;
-	width: 0.25rem;
-	height: 0.25rem;
+	width: 3px;
+	height: 3px;
 	border-radius: 50%;
 	margin: 0 auto;
-	margin-top: -0.58rem;
+	margin-top: -7px;
 }
 .bg-1 {
 	background: #59a7f9;
@@ -649,16 +647,16 @@ label.text {
 	position: relative;
 }
 .photo {
-	width: 7rem;
-	height: 7rem;
+	width: 8.3rem;
+	height: 8.3rem;
 	border-radius: 50%;
 	position: relative;
 	padding: 0.4rem;
 	background: url(../img/whitemask10.png) repeat;
 }
 .photo img {
-	width: 7rem;
-	height: 7rem;
+	width: 8.3rem;
+	height: 8.3rem;
 	border-radius: 50%;
 }
 .TopBoard .photo {
@@ -667,8 +665,8 @@ label.text {
 }
 .BottomBar {
 	width: 100%;
-	height: 3.67rem;
-	line-height: 3.67rem;
+	height: 44px;
+	line-height: 44px;
 	position: absolute;
 	bottom: 0;
 	left: 0;
@@ -676,19 +674,17 @@ label.text {
 .TopBar {
 	background: #f6f6f6;
 	position: static;
-	border-bottom: 0.083rem solid #ddd;
+	border-bottom: 1px solid #ddd;
 }
 .ClanderBar {
 	width: 100%;
 	height: 6.5rem;
-	border-bottom: 0.083rem solid #ddd;
+	border-bottom: 1px solid #ddd;
 	background: #fcfcfc;
-	/*overflow: hidden;*/
-	position: relative;
-	z-index: 2;
+	overflow: hidden;
 }
 .ClanderUl {
-	/*width: 9999px;*/
+	width: 9999px;
 	transition: 0.3s;
 	-webkit-transition: 0.3s;
 }
@@ -710,7 +706,7 @@ label.text {
 .ClanderTab td p{font-size:1rem;}
 .ClanderUl li table td p:first-child {
 	color: #ccc;
-	padding: 0.1rem 0 0.5rem 0;
+	padding: 0 0 1rem 0;
 }
 .ClanderUl li table td p:last-child span,
 .ClanderTab span {
@@ -736,7 +732,7 @@ label.text {
 	line-height: 30px;
 }
 .BtnItem {
-	/*position: absolute;*/
+	position: absolute;
 	background: #fff;
 	width: 100%;
 	left: 0;
@@ -757,18 +753,18 @@ label.text {
 	border-right: 1px solid #d9d9d9;
 }
 .inputList {
-	border: 0.083rem solid #d9d9d9;
-	border-width: 0.083rem 0;
-	padding-left: 0.83rem;
+	border: 1px solid #d9d9d9;
+	border-width: 1px 0;
+	padding-left: 10px;
 	background: #fff;
 }
 .inputList + .inputList {
-	margin-top: -0.083rem;
+	margin-top: -1px;
 }
 .inputList li {
-	min-height: 3.75rem;
-	line-height: 3.75rem;
-	border-bottom: 0.083rem solid #d9d9d9;
+	min-height: 45px;
+	line-height: 45px;
+	border-bottom: 1px solid #d9d9d9;
 	position: relative;
 }
 .inputList li:last-child {
@@ -776,21 +772,21 @@ label.text {
 }
 .inputList li span.lable {
 	display: inline-block;
-	height: 3.75rem;
-	line-height: 3.75rem;
+	height: 45px;
+	line-height: 47px;
 	color: #2a2a2a;
-	font-size: 1.33rem;
+	font-size: 16px;
 }
 .inputList li input,
 .inputList li .placeTxt,
 .LineInt,
 .lableTxt {
 	width: 68%;
-	min-height: 3.75rem;
-	line-height: 3.75rem;
-	font-size: 1.16rem;
+	min-height: 45px;
+	line-height: 49px;
+	font-size: 14px;
 	float: right;
-	margin-right: 1.25rem;
+	margin-right: 15px;
 	color: #8d8d8d;
 }
 .inputList li input.LineInt {
@@ -800,8 +796,8 @@ label.text {
 .inputList li .placeTxt {
 	width: 60%;
 	background: url(../img/arrow-r.png) right center no-repeat;
-	background-size:0.67rem;
-	padding-right: 1.67rem;
+	background-size: 8px;
+	padding-right: 20px;
 }
 .placeTxt img {
 	vertical-align: middle;
@@ -809,15 +805,15 @@ label.text {
 .inputList li .placeTxt .userPhoto,
 .userPhoto {
 	display: inline-block;
-	width: 4.17rem;
-	height: 4.17rem;
-	margin: 0.83rem 0;
+	width: 50px;
+	height: 50px;
+	margin: 10px 0;
 	vertical-align: middle;
 }
 .inputList li .placeTxt .userPhoto img,
 .userPhoto img {
-	width: 4.17rem;
-	height: 4.17rem;
+	width: 50px;
+	height: 50px;
 	border-radius: 50%;
 }
 .checkList li {
@@ -829,7 +825,7 @@ label.text {
 }
 .checkList li.choosed {
 	background: url(../img/icon-9.png) no-repeat 98% center;
-	background-size: 1.5rem;
+	background-size: 18px;
 }
 .checkList li.choosed span.lable {
 	color: #19bff1;
@@ -851,28 +847,28 @@ label.text {
 }
 .switch {
 	display: inline-block;
-	width: 4.83rem;
-	height: 2.3rem;
+	width: 58px;
+	height: 28px;
 	position: relative;
-	border: 0.17rem solid #1abded;
-	border-radius: 2rem;
+	border: 2px solid #1abded;
+	border-radius: 24px;
 	background: #1abded;
-	margin: 0.83rem 1.25rem 0 0;
+	margin: 10px 15px 0 0;
 	transition: 0.3s;
 	-webkit-transition: 0.3s;
 	position: relative;
 }
 .switch em {
 	display: inline-block;
-	width: 2.3rem;
-	height: 2.3rem;
+	width: 28px;
+	height: 28px;
 	line-height: 0;
 	font-size: 0;
 	background: #fff;
 	border-radius: 50%;
 	position: absolute;
-	left: 2.5rem;
-	box-shadow: -0.083rem 0.083rem 0.25rem #139cc5;
+	left: 30px;
+	box-shadow: -1px 1px 3px #139cc5;
 	transition: 0.3s;
 	-webkit-transition: 0.3s;
 }
@@ -883,7 +879,7 @@ label.text {
 	-webkit-transition: 0.3s;
 }
 .switch.off em {
-	box-shadow: 0px 0.083rem 0.17rem #b9b9b9;
+	box-shadow: 0px 1px 2px #b9b9b9;
 	left: 0px;
 	transition: 0.3s;
 	-webkit-transition: 0.3s;
@@ -958,7 +954,7 @@ label.text {
 	background: #eee;
 }
 .wage {
-	padding-left: 2.92rem;
+	padding-left: 35px;
 }
 .wage li span.lable {
 	color: #888;
@@ -976,9 +972,9 @@ label.text {
 
 .ListItem li {
 	display: block;
-	height: 5rem;
-	border-bottom: 0.083rem solid #d9d9d9;
-	border-left-width: 0.42rem;
+	height: 60px;
+	border-bottom: 1px solid #d9d9d9;
+	border-left-width: 5px;
 	border-left-style: solid;
 	background: #fff;
 	overflow: hidden;
@@ -993,8 +989,8 @@ label.text {
 	-webkit-transition: 0.2s;
 }
 .ListItem li p {
-	padding: 0 1.67rem 0 1.25rem;
-	line-height: 5rem;
+	padding: 0 20px 0 15px;
+	line-height: 60px;
 }
 /*.ListItem li dl{display: none;}
 .ListItem li.current dl{display: block;}*/
@@ -1003,9 +999,9 @@ label.text {
 	background: #f6f6f6;
 }
 .ListItem li dl dd p {
-	line-height: 3.75rem;
-	border-top: 0.083rem solid #d9d9d9;
-	margin-left: 1.25rem;
+	line-height: 45px;
+	border-top: 1px solid #d9d9d9;
+	margin-left: 15px;
 	padding-left: 0;
 }
 .circle {
