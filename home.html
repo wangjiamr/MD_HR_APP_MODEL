@@ -42,10 +42,10 @@
 		</header>
 		<div class="TopBoard" style="background-image: url(img/img1.jpg);">
 			<span class="block photo"><img src="img/1.jpg"></span>
-			<p class="aligncenter font17 color-white mart40 p-top15">行走江湖</p>
+			<p class="aligncenter font17 color-white mart40 p-top20">行走江湖</p>
 			<div class="BottomBar aligncenter font14 color-white">
-				<span class="Icon Icon-prev"></span>
-				<span class="Icon Icon-next"></span>
+				<!--<span class="Icon Icon-prev"></span>
+				<span class="Icon Icon-next"></span>-->
 				<span>2015-8</span>
 			</div>
 		</div>
@@ -85,40 +85,6 @@
 						</tr>
 					</table>
 				</li>
-				<li>
-					<table>
-						<tr>
-							<td>
-								<p>SUN</p>
-								<p><span>7<i class=""></i></span></p>
-							</td>
-							<td>
-								<p>MON</p>
-								<p><span class="current">8<i class=""></i></span></p>
-							</td>
-							<td>
-								<p>TUE</p>
-								<p><span>9<i class=""></i></span></p>
-							</td>
-							<td>
-								<p>WED</p>
-								<p><span>10</span></p>
-							</td>
-							<td>
-								<p>THU</p>
-								<p><span>11</span></p>
-							</td>
-							<td>
-								<p>FRI</p>	
-								<p><span>12</span></p>
-							</td>
-							<td>
-								<p>SAT</p>
-								<p><span>13</span></p>
-							</td>
-						</tr>
-					</table>
-				</li>
 			</ul>
 		</div>
 		<div class="BtnItem">
@@ -134,7 +100,7 @@
 			</table>
 		</div>
 		<!--下拉的菜单begin-->
-		<div class="menu">
+		<div class="menu" style="display: none;">
 			<ul class="nav mart50 p-top20">
 				<li>个人设置</li>
 				<li>我的假期</li>
@@ -151,20 +117,41 @@
 	</body>
 	
 	<script type="text/javascript">
-		$(function(){
-			function clandersize(){
-				$('.ClanderUl').find('li').css({
-					"width":$(window).width()
-				});
-				$('.BtnItem').css({
-					"top":$('.TopBoard').height()+80
-				});
-			}
+//	function setSize(){
+//		var font_size = document.body.clientWidth/320*16*0.625
+//		$('html').css('font-size',font_size);
+//	}
+	function clandersize(){
+		var $top_h = $('.TopBoard').height().toFixed(5);
+		var $cla_h = $('.ClanderBar').height();
+		console.log($top_h);
+		$('.ClanderUl').find('li').css({
+			"width":$(window).width()
+		});
+		$('.BtnItem').css({
+			"height":$(window).height()-($top_h+$cla_h)
+		});
+	}
+	//计算html 基准 
+    (function (doc, win) {
+      var docEl = doc.documentElement,
+        resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+        recalc = function () {
+          var clientWidth = docEl.clientWidth;
+          if (!clientWidth) return;
+          docEl.style.fontSize = 12 * (clientWidth / 375) + 'px';
+        };
+
+      if (!doc.addEventListener) return;
+      win.addEventListener(resizeEvt, recalc, false);
+      doc.addEventListener('DOMContentLoaded', recalc, false);
+    })(document, window);
+    
+$(function(){
 			clandersize();
 			$(window).resize(function(){
 				clandersize();
 			});
-			
 			$("#menu").off('click').on('click',function(){
 				var $this = $(this),
 					$header = $('.header'),
