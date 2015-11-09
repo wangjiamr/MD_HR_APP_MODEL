@@ -6,7 +6,7 @@ html {
 	/*基准值算法 x=(($(window).width())*12)/350*/
 }
 body {
-	
+	-webkit-user-select: none; 
 	line-height: 1.6rem;
 	font-family: Tahoma, Arial;
 	background: #f8f8f8;
