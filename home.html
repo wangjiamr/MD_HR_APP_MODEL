@@ -42,7 +42,7 @@
 		</header>
 		<div class="TopBoard" style="background-image: url(img/img1.jpg);">
 			<span class="block photo"><img src="img/1.jpg"></span>
-			<p class="aligncenter font17 color-white mart40 p-top20">行走江湖</p>
+			<p class="aligncenter font17 color-white mart50 p-top20">行走江湖</p>
 			<div class="BottomBar aligncenter font14 color-white">
 				<!--<span class="Icon Icon-prev"></span>
 				<span class="Icon Icon-next"></span>-->
@@ -122,14 +122,13 @@
 //		$('html').css('font-size',font_size);
 //	}
 	function clandersize(){
-		var $top_h = $('.TopBoard').height().toFixed(5);
+		var $top_h = $('.TopBoard').height();
 		var $cla_h = $('.ClanderBar').height();
-		console.log($top_h);
 		$('.ClanderUl').find('li').css({
 			"width":$(window).width()
 		});
 		$('.BtnItem').css({
-			"height":$(window).height()-($top_h+$cla_h)
+			"height":$(window).height()-($top_h+$cla_h)-2
 		});
 	}
 	//计算html 基准 
@@ -169,7 +168,6 @@ $(function(){
 			$('.bottomBack').off('click').on('click',function(){
 				$("#menu").click();
 			});
-			
 		});
 		
 	</script>

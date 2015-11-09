@@ -576,6 +576,18 @@ label.text {
 	margin: 0 auto;
 	margin-top: -0.58rem;
 }
+.Icon-count,.Icon-pass{
+	width: 1.67rem;
+	height:1.67rem;
+	background-image: url(../img/icon-count.png);
+	background-size:90%;
+	position: absolute;
+	top:50%;
+	margin-top:-0.8rem;
+}
+.Icon-pass{
+	background-image: url(../img/icon-pass.png);
+}
 .bg-1 {
 	background: #59a7f9;
 }
@@ -663,7 +675,7 @@ label.text {
 }
 .TopBoard .photo {
 	margin: 0 auto;
-	top: 16%;
+	top: 18%;
 }
 .BottomBar {
 	width: 100%;
@@ -681,7 +693,7 @@ label.text {
 .ClanderBar {
 	width: 100%;
 	height: 6.5rem;
-	border-bottom: 0.083rem solid #ddd;
+	border-bottom: 1px solid #ddd;
 	background: #fcfcfc;
 	/*overflow: hidden;*/
 	position: relative;
@@ -1239,13 +1251,15 @@ label.text {
 	transform: rotate(0deg);
 	-webkit-transform: rotate(0deg);
 }
-
-
-
-
-
-
-
+/*login page*/
+.login_layout{background:#f4f4f4 url(../img/login_mask.png);width:100%;height:100%;}
+.logo{width:100%;padding-top:17%;}
+.logo img{width:35%;}
+.login_box{width:62%;margin:0 auto;border-top:1px solid #ccc;margin-top:30%;}
+.login_box p{height:4.17rem;line-height:4.17rem;border-bottom:1px solid #ccc;position: relative;}
+.login_box p input{height:3.6rem;color: #888;font-size:1.16rem;width:100%;text-indent:2.4rem;background:none;}
+.login_bt{width:64%;margin:0 auto;margin-top:20%;}
+.login_bt span.btn{margin:0 auto;background:#22ac38;border-radius:5px;font-size:1.42rem;}
 
 
 
