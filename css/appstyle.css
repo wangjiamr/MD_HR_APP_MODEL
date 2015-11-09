@@ -553,6 +553,7 @@ label.text {
 	height: 59px;
 	background-image: url(../img/arrow-t.png);
 	background-size: 22px;
+	-webkit-transform: rotate(180deg);
 }
 .Icon-arrow-t {
 	width: 1rem;
@@ -953,28 +954,28 @@ label.text {
 	line-height: 3.83rem;
 	text-align: center;
 	padding-top: 1.67rem;
-	-webkit-transform: translate(0, -7.5rem);
+	-webkit-transform: translate(0, 7.5rem);
 }
 .menu.current .nav li {
 	-webkit-transform: translate(0, 1rem);
-	transition: 0.2s;
-	-webkit-transition: 0.2s;
+	transition: 0.7s;
+	-webkit-transition: 0.7s;
 }
 .menu.current .nav li:first-child {
-	transition: 0.5s;
-	-webkit-transition: 0.5s;
+	transition: 0.7s;
+	-webkit-transition: 0.7s;
 }
 .menu.current .nav li:nth-child(2) {
 	transition: 0.6s;
 	-webkit-transition: 0.6s;
 }
 .menu.current .nav li:nth-child(3) {
-	transition: 0.7s;
-	-webkit-transition: 0.7s;
+	transition: 0.5s;
+	-webkit-transition: 0.5s;
 }
 .menu.current .nav li:last-child {
-	transition: 0.7s;
-	-webkit-transition: 0.7s;
+	transition: 0.2s;
+	-webkit-transition: 0.2s;
 }
 .wageTitle {
 	background: #eee;
