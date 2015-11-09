@@ -956,7 +956,9 @@ label.text {
 	-webkit-transform: translate(0, -7.5rem);
 }
 .menu.current .nav li {
-	-webkit-transform: translate(0, 0);
+	-webkit-transform: translate(0, 1rem);
+	transition: 0.2s;
+	-webkit-transition: 0.2s;
 }
 .menu.current .nav li:first-child {
 	transition: 0.5s;
