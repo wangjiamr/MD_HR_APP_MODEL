@@ -660,12 +660,12 @@ label.text {
 	margin-top:-4.17rem;
 	-webkit-transform:translate(100%, 0);
 }
-.header.current .headerItem:first-child{
+.header.active .headerItem:first-child{
 	-webkit-transform:translate(-100%, 0);
 	transition: 0.7s;
 	-webkit-transition: 0.7s;
 }
-.header.current .headerItem:last-child{
+.header.active .headerItem:last-child{
 	-webkit-transform:translate(0, 0);
 }
 .main {
