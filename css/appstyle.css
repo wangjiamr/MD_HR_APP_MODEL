@@ -646,6 +646,28 @@ label.text {
 	transition: 0.5s;
 	-webkit-transition: 0.5s;
 }
+.header .headerItem{
+	width:100%;
+	float: left;
+	display: inline-block;
+	position:relative;
+	transition: 0.3s;
+	-webkit-transition: 0.3s;
+	
+}
+.header .headerItem:last-child{
+	background: #222;
+	margin-top:-4.17rem;
+	-webkit-transform:translate(100%, 0);
+}
+.header.current .headerItem:first-child{
+	-webkit-transform:translate(-100%, 0);
+	transition: 0.7s;
+	-webkit-transition: 0.7s;
+}
+.header.current .headerItem:last-child{
+	-webkit-transform:translate(0, 0);
+}
 .main {
 	position: absolute;
 	top: 4.17rem;
@@ -690,7 +712,7 @@ label.text {
 .TopBar {
 	background: #f6f6f6;
 	position: static;
-	border-bottom: 0.083rem solid #ddd;
+	border-bottom: 1px solid #ddd;
 }
 .ClanderBar {
 	width: 100%;
@@ -698,13 +720,11 @@ label.text {
 	border-bottom: 1px solid #ddd;
 	background: #fcfcfc;
 	/*overflow: hidden;*/
-	
 	position: relative;
 	z-index: 2;
 }
 .ClanderUl {
 	/*width: 9999px;*/
-	
 	transition: 0.3s;
 	-webkit-transition: 0.3s;
 }
@@ -777,7 +797,7 @@ label.text {
 	border-right: 1px solid #d9d9d9;
 }
 .inputList {
-	border: 0.083rem solid #d9d9d9;
+	border: 1px solid #d9d9d9;
 	border-width: 0.083rem 0;
 	padding-left: 0.83rem;
 	background: #fff;
@@ -788,7 +808,7 @@ label.text {
 .inputList li {
 	min-height: 3.75rem;
 	line-height: 3.75rem;
-	border-bottom: 0.083rem solid #d9d9d9;
+	border-bottom: 1px solid #d9d9d9;
 	position: relative;
 }
 .inputList li:last-child {
@@ -911,7 +931,7 @@ label.text {
 .bottomBack {
 	width: 100%;
 	height: 4.92rem;
-	border-top: 0.083rem solid #d9d9d9;
+	border-top: 1px solid #d9d9d9;
 	background: #fff;
 	position: fixed;
 	left: 0;
@@ -926,7 +946,6 @@ label.text {
 	z-index: 2;
 	background: -webkit-gradient(linear, 0 0, 0 100%, from(#d8d7db), to(#fff));
 	/*-webkit-transform: translate(0, -100%);*/
-	
 	transition: 0.3s;
 	-webkit-transition: 0.3s;
 	overflow: hidden;
@@ -946,7 +965,7 @@ label.text {
 	width: 100%;
 	position: absolute;
 	left: 0;
-	bottom: 6.25rem;
+	bottom: 1rem;
 }
 .nav li {
 	font-size: 1.42rem;
@@ -954,10 +973,10 @@ label.text {
 	line-height: 3.83rem;
 	text-align: center;
 	padding-top: 1.67rem;
-	-webkit-transform: translate(0, 7.5rem);
+	-webkit-transform: translate(0, 2rem);
 }
 .menu.current .nav li {
-	-webkit-transform: translate(0, 1rem);
+	/*-webkit-transform: translate(0, 1rem);*/
 	transition: 0.7s;
 	-webkit-transition: 0.7s;
 }
