@@ -780,8 +780,10 @@ label.text {
 	height: 98%;
 }
 .ClanderTab thead th {
-	color: #ddd;
 	line-height: 30px;
+}
+.ClanderTab td.num,.ClanderTab tr td:first-child,.ClanderTab tr td:last-child,.ClanderTab thead th:first-child,.ClanderTab thead th:last-child{
+	color:#ccc;
 }
 .BtnItem {
 	/*position: absolute;*/
@@ -1055,7 +1057,7 @@ label.text {
 }
 .ListItem li dl dd p {
 	line-height: 3.75rem;
-	border-top: 0.083rem solid #d9d9d9;
+	border-top: 1px solid #d9d9d9;
 	margin-left: 1.25rem;
 	padding-left: 0;
 }
@@ -1068,8 +1070,10 @@ label.text {
 	background-repeat: no-repeat;
 	position: relative;
 	z-index: 2;
+}
+.main .circle:first-child{
 	-webkit-transform: rotate(0deg);
-	transition:0.6s;
+	-webkit-transition:0.5s;
 }
 .circle.nobg {
 	margin-top: -7.5rem;
@@ -1194,6 +1198,22 @@ label.text {
 	}
 	to {
 		transform: rotate(360deg)
+	}
+}
+@-webkit-keyframes rotateStart {
+	from {
+		-webkit-transform: rotate(0deg)
+	}
+	to {
+		-webkit-transform: rotate(0deg)
+	}
+}
+@keyframes rotateStart {
+	from {
+		transform: rotate(0deg)
+	}
+	to {
+		transform: rotate(0deg)
 	}
 }
 /*打卡成功*/

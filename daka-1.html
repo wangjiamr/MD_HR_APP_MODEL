@@ -14,7 +14,7 @@
 			<p>在线打卡</p>
 		</header>
 		<div class="main" title="打卡成功加success">
-			<div class="circle  mart30"></div>
+			<div class="circle  mart30" style=""></div>
 			<div class="circle nobg"><span class="userPhoto"><img src="img/1.jpg"></span></div>
 			<p class="aligncenter font16 mart10">请长按按钮进行打卡</p>
 			<div class="hand current"><span class="handIn"></span></div>
@@ -44,10 +44,15 @@
 			$('.hand').off('touchstart').on('touchstart',function(){
 				var $this = $(this);
 				$this.addClass('current');
-				$('.main').find('.circle:first').addClass('current');
-				setTimeout(function(){
-					$('.main').addClass('success');
-				},5000);
+				$('.circle:first','.main').addClass('current');
+//				setTimeout(function(){
+//					$('.main').addClass('success');
+//				},5000);
+			});
+			$('.hand').off('touchend').on('touchend',function(){
+				var $this = $(this);
+				$this.removeClass('current');
+				$('.circle:first','.main').removeClass('current');
 			});
 		});
 	</script>
