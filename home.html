@@ -153,28 +153,28 @@
 //  })(document, window);
 //  
 $(function(){
-			clandersize();
-			$(window).resize(function(){
-				clandersize();
-			});
-			$("#menu").off('click').on('click',function(){
-				var $this = $(this),
-					$header = $('.header'),
-					$menu = $('.menu');
-				if($this.hasClass('current')){
-					$this.removeClass('current');
-					$header.removeClass('current');
-					$menu.removeClass('current');
-				}else{
-					$this.addClass('current');
-					$header.addClass('current');
-					$menu.addClass('current');
-				}
-			});
-			$('.bottomBack').off('click').on('click',function(){
-				$("#menu").click();
-			});
-		});
+	clandersize();
+	$(window).resize(function(){
+		clandersize();
+	});
+	$("#menu").off('click').on('click',function(){
+		var $this = $(this),
+			$header = $('.header'),
+			$menu = $('.menu');
+		if($this.hasClass('current')){
+			$this.removeClass('current');
+			$header.removeClass('current');
+			$menu.removeClass('current');
+		}else{
+			$this.addClass('current');
+			$header.addClass('current');
+			$menu.addClass('current');
+		}
+	});
+	$('.bottomBack').off('click').on('click',function(){
+		$("#menu").click();
+	});
+});
 		
 	</script>
 </html>

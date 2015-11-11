@@ -9,18 +9,14 @@
 		<title>我的考勤</title>
 	</head>
 	<body>
-		<header class="header current">
-			<span class="Icon Icon-back"></span>
-			<p>我的考勤</p>
-		</header>
 		<div class="main Ios_scroll">
-			<div class="TopBoard" style="top:0px;">
+			<div class="TopBoard" style="height:auto;">
 				<div class="BottomBar TopBar aligncenter font14">
 					<span class="Icon Icon-prev"></span>
 					<span class="Icon Icon-next"></span>
 					<span>2015-8</span>
 				</div>
-				<div class="ClanderBar">
+				<div class="ClanderBar p-bt10" style="height:auto;">
 					<table class="ClanderTab">
 						<thead>
 							<tr>
@@ -186,29 +182,6 @@
 	<script src="js/jquery.js"></script>
 	<script type="text/javascript">
 		$(function(){
-			function size(){
-				var $ListDiv = $('.ListDiv'),
-					$TopH = $('.TopBoard').height(),
-					$h = $TopH-45;
-				if($TopH < 273){
-					$('.TopBoard').height(273);
-					$('.ClanderBar').css({
-						"height":$('.TopBoard').height()-45
-					})
-				}else{
-					$('.ClanderBar').css({
-						"height":$h
-					})
-				}
-				$ListDiv.css({
-					"height":$(window).height()-50-$h
-				});
-			}
-			size();
-			$(window).resize(function(){
-				size();
-			});
-			
 			$('.ListItem').find('li').off('click').on('click',function(){
 				var $this = $(this)
 				if($this.hasClass('current')){

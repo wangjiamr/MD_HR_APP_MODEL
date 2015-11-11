@@ -304,6 +304,7 @@ label.text {
 }
 /*width*/
 /*padding*/
+
 .nopadding {
 	padding: 0!important;
 }
@@ -644,43 +645,42 @@ label.text {
 	transition: 0.5s;
 	-webkit-transition: 0.5s;
 }
-.header .headerItem{
-	width:100%;
+.header .headerItem {
+	width: 100%;
 	float: left;
 	display: inline-block;
-	position:relative;
+	position: relative;
 	transition: 0.2s;
 	-webkit-transition: 0.2s;
-	
 }
-.header .headerItem:last-child{
+.header .headerItem:last-child {
 	background: #222;
-	margin-top:-4.17rem;
-	-webkit-transform:translate(100%, 0);
+	margin-top: -4.17rem;
+	-webkit-transform: translate(100%, 0);
 }
-.header.active .headerItem:first-child{
-	-webkit-transform:translate(-100%, 0);
+.header.active .headerItem:first-child {
+	-webkit-transform: translate(-100%, 0);
 	transition: 0.2s;
 	-webkit-transition: 0.2s;
 }
-.header.active .headerItem:last-child{
-	-webkit-transform:translate(0, 0);
+.header.active .headerItem:last-child {
+	-webkit-transform: translate(0, 0);
 }
-.header.hide .headerItem:last-child{
-	-webkit-transform:translate(0, 0);
+.header.hide .headerItem:last-child {
+	-webkit-transform: translate(0, 0);
 	transition: 0s;
 	-webkit-transition: 0s;
-	-webkit-transform:translate(0, 0);
+	-webkit-transform: translate(0, 0);
 }
-.header.hide .headerItem:last-child{
+.header.hide .headerItem:last-child {
 	display: none;
 	transition: 0s;
 	-webkit-transition: 0s;
-	-webkit-transform:translate(100%, 0);
+	-webkit-transform: translate(100%, 0);
 }
 .main {
 	position: absolute;
-	top:5rem;
+	top: 0;
 	bottom: 0;
 	right: 0;
 	left: 0;
@@ -730,11 +730,13 @@ label.text {
 	border-bottom: 1px solid #ddd;
 	background: #fcfcfc;
 	/*overflow: hidden;*/
+	
 	position: relative;
 	z-index: 2;
 }
 .ClanderUl {
 	/*width: 9999px;*/
+	
 	transition: 0.3s;
 	-webkit-transition: 0.3s;
 }
@@ -754,6 +756,7 @@ label.text {
 .ClanderTab thead th {
 	text-align: center;
 	font-size: 1rem;
+	height: 3rem;
 }
 .ClanderTab td p {
 	display: inline-block;
@@ -768,7 +771,7 @@ label.text {
 	padding: 0.1rem 0 0.5rem 0;
 }
 .ClanderUl li table td p:last-child span,
-.ClanderTab span{
+.ClanderTab span {
 	display: inline-block;
 	width: 2.91rem;
 	height: 2.91rem;
@@ -788,8 +791,10 @@ label.text {
 .ClanderTab thead th {
 	line-height: 30px;
 }
-.ClanderTab td.num,.ClanderTab tr td:first-child,.ClanderTab tr td:last-child{
-	color:#ccc;
+.ClanderTab td.num,
+.ClanderTab tr td:first-child,
+.ClanderTab tr td:last-child {
+	color: #ccc;
 }
 .BtnItem {
 	/*position: absolute;*/
@@ -963,6 +968,7 @@ label.text {
 	z-index: 2;
 	background: -webkit-gradient(linear, 0 0, 0 100%, from(#d8d7db), to(#fff));
 	/*-webkit-transform: translate(0, -100%);*/
+	
 	transition: 0.3s;
 	-webkit-transition: 0.3s;
 	overflow: hidden;
@@ -994,6 +1000,7 @@ label.text {
 }
 .menu.current .nav li {
 	/*-webkit-transform: translate(0, 1rem);*/
+	
 	transition: 0.7s;
 	-webkit-transition: 0.7s;
 }
@@ -1077,9 +1084,9 @@ label.text {
 	position: relative;
 	z-index: 2;
 }
-.main .circle:first-child{
+.main .circle:first-child {
 	-webkit-transform: rotate(0deg);
-	-webkit-transition:0.5s;
+	-webkit-transition: 0.5s;
 }
 .circle.nobg {
 	margin-top: -7.5rem;
@@ -1091,7 +1098,6 @@ label.text {
 	top: 50%;
 	left: 50%;
 	margin: -2.5rem 0 0 -2.5rem;
-	
 }
 .circle.current {
 	animation: rotate 2s linear infinite;
@@ -1326,6 +1332,7 @@ label.text {
 
 .login_layout {
 	/*background: #f4f4f4 url(../img/login_mask.png);*/
+	
 	background-size: 100%;
 	width: 100%;
 	height: 100%;
@@ -1351,7 +1358,7 @@ label.text {
 }
 .login_box p input {
 	height: 3.6rem;
-	line-height:5rem;
+	line-height: 5rem;
 	color: #888;
 	font-size: 1rem;
 	width: 100%;
@@ -1366,7 +1373,7 @@ label.text {
 	position: absolute;
 	top: 50%;
 	margin-top: -8px;
-	left:2.3rem;
+	left: 2.3rem;
 	-webkit-transform: translate(0, 0px);
 	transition: 0.2s;
 	-webkit-transition: 0.2s;
@@ -1387,3 +1394,104 @@ label.text {
 	border-radius: 5px;
 	font-size: 1.42rem;
 }
+/*通讯录*/
+
+.contacts {
+	background: #fff;
+	border: 1px solid #d9d9d9;
+	border-width: 1px 0;
+}
+.contacts li {
+	border-bottom: 1px solid #d9d9d9;
+	margin-left: 1rem;
+}
+.contacts li:last-child {
+	border: 0;
+}
+.contacts li:first-child {
+	border: 0;
+	border-bottom: 1px solid #d9d9d9;
+}
+.contacts li p:last-child {
+	color: #9b9b9b;
+	display: block;
+}
+.contacts li p {
+	height: 2rem;
+	line-height: 2rem;
+}
+.wordCheck {
+	position: fixed;
+	right: -6px;
+	top: 80px;
+	z-index: 10;
+}
+.wordCheck span {
+	display: block;
+	font-size: 1rem;
+	color: #333;
+	padding: 0px 10px;
+}
+.cur_word {
+	width: 5rem;
+	height: 5rem;
+	font-size:2rem;
+	line-height: 5rem;
+	text-align: center;
+	color: #fff;
+	background:#000;
+	position: fixed;
+	left: 50%;
+	top: 50%;
+	margin: -2.5rem 0 0 -2.5rem;
+	z-index: 10;
+	opacity: 0.7;
+	border-radius:50%;
+}
+.checkMenu{
+	width:70%;
+	height:100%;
+	position: fixed;
+	top:0;
+	right:0;
+	background:#fff;
+	overflow: hidden;
+}
+.checkMenu .menuItem{
+	width:100%;
+	height:100%;
+	transition:0.2s;
+	position: absolute;
+	top:0;
+	left:0;
+	background:#eee;
+}
+.checkMenu .menuItem:last-child{
+	-webkit-transform: translate(100%, 0);
+}
+.checkMenu.current .menuItem:last-child{
+	-webkit-transform: translate(0, 0);
+}
+.checkMenu.current .menuItem:first-child{
+	-webkit-transform: translate(-100%, 0);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
