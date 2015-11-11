@@ -11,6 +11,7 @@ body {
 	font-family: Tahoma, Arial;
 	background: #f8f8f8;
 	position: relative;
+	overflow: auto;
 }
 html,
 body {
@@ -303,7 +304,6 @@ label.text {
 }
 /*width*/
 /*padding*/
-
 .nopadding {
 	padding: 0!important;
 }
@@ -614,9 +614,6 @@ label.text {
 .border-4 {
 	border-color: #aaa;
 }
-.Ios_scroll {
-	-webkit-overflow-scrolling: touch;
-}
 .header {
 	width: 100%;
 	height: 4.17rem;
@@ -651,8 +648,8 @@ label.text {
 	float: left;
 	display: inline-block;
 	position:relative;
-	transition: 0.3s;
-	-webkit-transition: 0.3s;
+	transition: 0.2s;
+	-webkit-transition: 0.2s;
 	
 }
 .header .headerItem:last-child{
@@ -662,15 +659,27 @@ label.text {
 }
 .header.active .headerItem:first-child{
 	-webkit-transform:translate(-100%, 0);
-	transition: 0.3s;
-	-webkit-transition: 0.3s;
+	transition: 0.2s;
+	-webkit-transition: 0.2s;
 }
 .header.active .headerItem:last-child{
 	-webkit-transform:translate(0, 0);
 }
+.header.hide .headerItem:last-child{
+	-webkit-transform:translate(0, 0);
+	transition: 0s;
+	-webkit-transition: 0s;
+	-webkit-transform:translate(0, 0);
+}
+.header.hide .headerItem:last-child{
+	display: none;
+	transition: 0s;
+	-webkit-transition: 0s;
+	-webkit-transform:translate(100%, 0);
+}
 .main {
 	position: absolute;
-	top: 4.17rem;
+	top:5rem;
 	bottom: 0;
 	right: 0;
 	left: 0;
@@ -930,7 +939,7 @@ label.text {
 }
 .bottomBack {
 	width: 100%;
-	height: 44px;
+	height: 49px;
 	border-top: 1px solid #d9d9d9;
 	background: #fff;
 	position: fixed;
@@ -1059,6 +1068,8 @@ label.text {
 	background-repeat: no-repeat;
 	position: relative;
 	z-index: 2;
+	-webkit-transform: rotate(0deg);
+	transition:0.6s;
 }
 .circle.nobg {
 	margin-top: -7.5rem;
@@ -1070,6 +1081,7 @@ label.text {
 	top: 50%;
 	left: 50%;
 	margin: -2.5rem 0 0 -2.5rem;
+	
 }
 .circle.current {
 	animation: rotate 2s linear infinite;
@@ -1078,7 +1090,7 @@ label.text {
 .circle .userPhoto img {
 	width: 5rem;
 	height: 5rem;
-	border: 0.083rem solid #d9d9d9;
+	border: 1px solid #d9d9d9;
 }
 .hand,
 .handIn {
