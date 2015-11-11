@@ -678,6 +678,13 @@ label.text {
 	-webkit-transition: 0s;
 	-webkit-transform: translate(100%, 0);
 }
+.menuItem .header{
+	position: relative;
+}
+.menuItem .headerItem:last-child {
+	margin:0;
+	-webkit-transform: translate(0, 0);
+}
 .main {
 	position: absolute;
 	top: 0;
@@ -1456,6 +1463,7 @@ label.text {
 	right:0;
 	background:#fff;
 	overflow: hidden;
+	z-index:10;
 }
 .checkMenu .menuItem{
 	width:100%;
@@ -1475,7 +1483,13 @@ label.text {
 .checkMenu.current .menuItem:first-child{
 	-webkit-transform: translate(-100%, 0);
 }
-
+.checkMenu .inputList .placeTxt{
+	color: #333;
+	width:100%;
+	margin:0;
+	padding:0;
+	background-position:94% center;
+}
 
 
 
