@@ -9,18 +9,14 @@
 		<title>我的考勤</title>
 	</head>
 	<body>
-		<header class="header current">
-			<span class="Icon Icon-back"></span>
-			<p>我的考勤</p>
-		</header>
 		<div class="main Ios_scroll">
-			<div class="TopBoard" style="top:0px;">
+			<div class="TopBoard" style="height:auto;">
 				<div class="BottomBar TopBar aligncenter font14">
 					<span class="Icon Icon-prev"></span>
 					<span class="Icon Icon-next"></span>
 					<span>2015-8</span>
 				</div>
-				<div class="ClanderBar">
+				<div class="ClanderBar p-bt10" style="height:auto;">
 					<table class="ClanderTab">
 						<thead>
 							<tr>
@@ -36,19 +32,19 @@
 						<tbody>
 							<tr>
 								<td>
-									<p><span>31<i class="icon-circle bg-1"></i></span></p>
+									<p></p>
 								</td>
 								<td>
-									<p><span class="current">1<i class="icon-circle bg-2"></i></span></p>
+									<p><span class="current">1</span><i class="icon-circle bg-2"></i></p>
 								</td>
 								<td>
-									<p><span>2<i class="icon-circle bg-3"></i></span></p>
+									<p><span>2</span><i class="icon-circle bg-3"></i></p>
 								</td>
 								<td>
 									<p><span>3</span></p>
 								</td>
 								<td>
-									<p><span>4<i class="icon-circle bg-4"></i></span></p>
+									<p><span>4</span><i class="icon-circle bg-4"></i></p>
 								</td>
 								<td>
 									<p><span>5</span></p>
@@ -139,15 +135,9 @@
 								<td>
 									<p><span>31</span></p>
 								</td>
-								<td class="num">
-									<p><span>1</span></p>
-								</td>
-								<td class="num">
-									<p><span>2</span></p>
-								</td>
-								<td class="num">
-									<p><span>3</span></p>
-								</td>
+								<td></td>
+								<td></td>
+								<td></td>
 							</tr>
 						</tbody>
 					</table>
@@ -192,29 +182,6 @@
 	<script src="js/jquery.js"></script>
 	<script type="text/javascript">
 		$(function(){
-			function size(){
-				var $ListDiv = $('.ListDiv'),
-					$TopH = $('.TopBoard').height(),
-					$h = $TopH-45;
-				if($TopH < 273){
-					$('.TopBoard').height(273);
-					$('.ClanderBar').css({
-						"height":$('.TopBoard').height()-45
-					})
-				}else{
-					$('.ClanderBar').css({
-						"height":$h
-					})
-				}
-				$ListDiv.css({
-					"height":$(window).height()-50-$h
-				});
-			}
-			size();
-			$(window).resize(function(){
-				size();
-			});
-			
 			$('.ListItem').find('li').off('click').on('click',function(){
 				var $this = $(this)
 				if($this.hasClass('current')){

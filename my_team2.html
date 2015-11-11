@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<meta name="apple-touch-fullscreen" content="yes"/>
+		<meta content="black-translucent" name="apple-mobile-web-app-status-bar-style"> 
+		<link rel="stylesheet" type="text/css" href="css/appstyle.css">
+		<title>我的团队</title>
+	</head>
+	<body>
+		<div class="main">
+			<p class="font14 color-8"><span class="marl10">A</span></p>
+			<ul class="contacts">
+				<li class="clearfix">
+					<span class="userPhoto floatleft"><img src="img/1.jpg"></span>
+					<p class="p-top10"><span class="font16 marl10">王振佳</span></p>
+					<p class="txt_hidden"><span class="font12 mart5 marl10">JAVA工程师</span></p>
+				</li>
+				<li class="clearfix">
+					<span class="userPhoto floatleft"><img src="img/1.jpg"></span>
+					<p class="p-top10"><span class="font16 marl10">Bruce Zhang</span></p>
+					<p class="txt_hidden"><span class="font12 mart5 marl10">前端工程师傅</span></p>
+				</li>
+				<li class="clearfix">
+					<span class="userPhoto floatleft"><img src="img/1.jpg"></span>
+					<p class="p-top10"><span class="font16 marl10">Bruce Zhang</span></p>
+					<p class="txt_hidden"><span class="font12 mart5 marl10">JAVA工程师</span></p>
+				</li>
+				<li class="clearfix">
+					<span class="userPhoto floatleft"><img src="img/1.jpg"></span>
+					<p class="p-top10"><span class="font16 marl10">王振佳</span></p>
+					<p class="txt_hidden"><span class="font12 mart5 marl10">JAVA工程师</span></p>
+				</li>
+				<li class="clearfix">
+					<span class="userPhoto floatleft"><img src="img/1.jpg"></span>
+					<p class="p-top10"><span class="font16 marl10">Bruce Zhang</span></p>
+					<p class="txt_hidden"><span class="font12 mart5 marl10">前端工程师傅</span></p>
+				</li>
+				<li class="clearfix">
+					<span class="userPhoto floatleft"><img src="img/1.jpg"></span>
+					<p class="p-top10"><span class="font16 marl10">Bruce Zhang</span></p>
+					<p class="txt_hidden"><span class="font12 mart5 marl10">JAVA工程师</span></p>
+				</li>
+			</ul>
+			<p class="font14 color-8"><span class="marl10">B</span></p>
+			<ul class="contacts">
+				<li class="clearfix">
+					<span class="userPhoto floatleft"><img src="img/1.jpg"></span>
+					<p class="p-top10"><span class="font16 marl10">王振佳</span></p>
+					<p class="txt_hidden"><span class="font12 mart5 marl10">JAVA工程师</span></p>
+				</li>
+				<li class="clearfix">
+					<span class="userPhoto floatleft"><img src="img/1.jpg"></span>
+					<p class="p-top10"><span class="font16 marl10">Bruce Zhang</span></p>
+					<p class="txt_hidden"><span class="font12 mart5 marl10">前端工程师傅</span></p>
+				</li>
+			</ul>
+			<div class="wordCheck">
+				<span>A</span>
+				<span>B</span>
+				<span>C</span>
+				<span>D</span>
+				<span>E</span>
+				<span>F</span>
+				<span>G</span>
+				<span>H</span>
+				<span>I</span>
+				<span>J</span>
+				<span>K</span>
+				<span>L</span>
+				<span>M</span>
+				<span>N</span>
+			</div>
+			<div class="cur_word">B</div>
+		</div>
+		<!--筛选begin-->
+		<div class="checkMenu current">
+			<div class="menuItem">
+				<header class="header current">
+					<div class="headerItem">
+						<span class="Icon Icon-back"></span>
+						<p>筛选</p>
+					</div>
+				</header>
+				<div class="main" style="top:4.17rem">
+					<ul class="inputList mart10">
+						<li class="clearfix"><span class="placeTxt">按部门筛选</span></li>
+						<li class="clearfix"><span class="placeTxt">按职位筛选</span></li>
+					</ul>
+				</div>
+			</div>
+			<div class="menuItem">
+				<header class="header current">
+					<div class="headerItem">
+						<span class="Icon Icon-back"></span>
+						<p>部门列表</p>
+					</div>
+				</header>
+				<div class="main" style="top:4.17rem">
+					<ul class="inputList mart10">
+						<li><span class="lable font13">项目负责人</span></li>
+						<li><span class="lable font13">产品研发总监</span></li>
+						<li><span class="lable font13">UI设计总监</span></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!--筛选begin-->
+		<div class="mask"></div>
+	</body>
+	<script src="js/jquery.js"></script>
+	<script>
+		$(function(){
+			$(".cur_word").off('click').on('click',function(){
+				var $this = $(this),
+					$menu = $('.checkMenu');
+				if($menu.hasClass('current')){
+					$menu.removeClass('current');
+				}else{
+					$menu.addClass('current');
+				}
+			});
+		});
+	</script>
+</html>
