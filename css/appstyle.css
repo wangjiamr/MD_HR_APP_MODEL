@@ -483,12 +483,20 @@ label.text {
 .Icon-more,
 .Icon-prev,
 .Icon-next,
-.Icon-back {
+.Icon-back,
+.Icon-off ,
+.Icon-txt{
 	width: 4.17rem;
 	height: 4.17rem;
 	background-image: url(../img/icon-more.png);
 	position: absolute;
 	background-size: 1.83rem;
+}
+.Icon-txt{
+	right:0;
+	top:0;
+	background: none;
+	line-height: 4.17rem;
 }
 .Icon-more {
 	left: 0;
@@ -503,7 +511,7 @@ label.text {
 	transition: 0.2s;
 	-webkit-transition: 0.2s;
 }
-.Icon-back {
+.Icon-back{
 	background-image: url(../img/icon-back.png);
 	top: 0;
 	left: 0;
@@ -592,6 +600,12 @@ label.text {
 .Icon-pass {
 	background-image: url(../img/icon-pass.png);
 }
+.Icon-off{
+	background-image: url(../img/icon-off.png);
+	background-size:1.5rem;
+	left: 0;
+	top: 0;
+}
 .bg-1 {
 	background: #59a7f9;
 }
@@ -621,7 +635,7 @@ label.text {
 	height: 4.17rem;
 	line-height: 4.17rem;
 	color: #fff;
-	font-size: 1.41rem;
+	font-size: 1.42rem;
 	text-align: center;
 	position: fixed;
 	top: 0;
@@ -850,6 +864,9 @@ label.text {
 	color: #2a2a2a;
 	font-size: 1.33rem;
 }
+.inputList li.current span.lable{
+	color:#007ddb;
+}
 .inputList li input,
 .inputList li .placeTxt,
 .LineInt,
@@ -1029,21 +1046,34 @@ label.text {
 }
 .wageTitle {
 	background: #eee;
+	padding-left:0;
 }
 .wage {
+	padding-left: 2.4rem;
+}
+.month .wage {
 	padding-left: 2.92rem;
 }
 .wage li span.lable {
 	color: #888;
 }
+.wageTitle {
+	background: #eee;
+	padding-left:1.6rem;
+}
+
+.wage li,.wage li span.lable{
+	font-size: 1.16rem;
+}
 .wageTitle li span.lable {
 	color: #2a2a2a;
+	font-size: 1.25rem;
 }
 .wage li .placeTxt {
 	padding: 0;
 	background: none;
 	color: #2a2a2a;
-	font-size: 1.42rem;
+	
 }
 /*.ListDiv{overflow-y: auto;}*/
 
@@ -1456,11 +1486,8 @@ label.text {
 	border-radius:50%;
 }
 .checkMenu{
-	width:70%;
+	width:100%;
 	height:100%;
-	position: fixed;
-	top:0;
-	right:0;
 	background:#fff;
 	overflow: hidden;
 	z-index:10;
