@@ -15,6 +15,7 @@ body {
 }
 html,
 body {
+	overflow-x: hidden;
 	height: 100%;
 }
 body,
@@ -1314,11 +1315,11 @@ label.text {
 	border-left: 4px solid #43be5a;
 	padding-left: 10px;
 }
-.item.noData {
-	border-color: #ccc;
-}
+
 .item p {
-	height: 20px;
+	height:3rem;
+	line-height: 3rem;
+	color:#888;
 }
 .item p:first-child {
 	position: relative;
@@ -1330,6 +1331,12 @@ label.text {
 }
 .work_on {
 	color: #43be5a;
+}
+.item.wrong{
+	border-color: #fbbf1e;
+}
+.item.wrong .work_on,.wrong .wrong{
+	color: #fbbf1e;
 }
 .success .Card {
 	-webkit-transform: translate(0, 0px);
@@ -1458,9 +1465,10 @@ label.text {
 	line-height: 2rem;
 }
 .wordCheck {
-	position: fixed;
+	position: absolute;
 	right: -6px;
-	top: 80px;
+	top: 4.17rem;
+	bottom:0;
 	z-index: 10;
 }
 .wordCheck span {
