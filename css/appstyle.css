@@ -1494,7 +1494,7 @@ label.text {
 }
 .wordCheck span {
 	display: block;
-	font-size:8px;
+	font-size:1rem;
 	color: #333;
 	height:16px;
 	padding: 0px 10px;
@@ -1510,7 +1510,7 @@ label.text {
 	text-align: center;
 	color: #fff;
 	background:#000;
-	position: fixed;
+	position: absolute;
 	left: 50%;
 	top: 50%;
 	margin: -2.5rem 0 0 -2.5rem;
