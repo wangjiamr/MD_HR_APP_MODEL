@@ -1440,20 +1440,26 @@ label.text {
 }
 /*通讯录*/
 
-.contacts {
-	background: #fff;
-	border: 1px solid #d9d9d9;
-	border-width: 1px 0;
+.list-inner {
+	overflow: hidden;
+	overflow-y: auto;
 }
 .contacts li {
-	border-bottom: 1px solid #d9d9d9;
-	margin-left: 1rem;
+	background: #fff;
 }
-.contacts li:last-child {
+.contacts li div{
+	height:5.83rem;
+	margin-left:1rem;
+	border-bottom: 1px solid #d9d9d9;
+}
+.contacts li:last-child div{
 	border: 0;
 }
 .contacts li:first-child {
 	border: 0;
+	border-bottom: 1px solid #d9d9d9;
+}
+.contacts li:last-child {
 	border-bottom: 1px solid #d9d9d9;
 }
 .contacts li p:last-child {
@@ -1464,18 +1470,37 @@ label.text {
 	height: 2rem;
 	line-height: 2rem;
 }
+.contacts li.list-group{
+	padding-left:1rem;
+	background: none;
+	margin:0;
+	border-top: 1px solid #d9d9d9;
+	border-bottom: 1px solid #d9d9d9;
+	margin-top:-1px;
+	background:#f6f6f6;
+}
+.contacts li.list-group:first-child {
+	border-top:0;
+}
 .wordCheck {
+	width:2rem;
 	position: absolute;
-	right: -6px;
-	top: 4.17rem;
+	right: 0;
+	top:0;
 	bottom:0;
 	z-index: 10;
+	background:#ddd;
+	opacity: 0.6;
 }
 .wordCheck span {
 	display: block;
-	font-size: 1rem;
+	font-size:8px;
 	color: #333;
+	height:16px;
 	padding: 0px 10px;
+}
+.wordCheck span.current{
+	color:#347cdc;
 }
 .cur_word {
 	width: 5rem;
