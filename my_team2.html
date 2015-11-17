@@ -145,6 +145,12 @@
 		};
 		$(function(){
 			setH();
+			$('.wordCheck', '.main').off('touchmove').on('touchmove',function(){
+				alert("wordCheck touchmove");
+			});
+			$('.wordCheck', '.main').off('touchend').on('touchend',function(){
+					alert("wordCheck touchend");
+			});
 			$(window).resize(function(){
 				setH();
 			});

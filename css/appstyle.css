@@ -695,6 +695,7 @@ label.text {
 }
 .menuItem .header{
 	position: relative;
+	background:#101010;
 }
 .menuItem .headerItem:last-child {
 	margin:0;
@@ -1441,6 +1442,7 @@ label.text {
 /*通讯录*/
 
 .list-inner {
+	margin-right:2rem;
 	overflow: hidden;
 	overflow-y: auto;
 }
