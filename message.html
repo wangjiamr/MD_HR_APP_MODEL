@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<meta name="apple-touch-fullscreen" content="yes"/>
+		<meta content="black-translucent" name="apple-mobile-web-app-status-bar-style"> 
+		<link rel="stylesheet" type="text/css" href="css/appstyle.css">
+		<title>消息提醒</title>
+	</head>
+	<body>
+		<header class="header current">
+			<span class="Icon Icon-back"></span>
+			<p>消息提醒</p>
+			<span class="Icon-txt font16">筛选</span>
+		</header>
+		<div class="main" style="top:4.17rem;">
+			<div class="message_box" title="删除先加remove，在把dom删除">
+				<span class="btn btn-delete">删 除</span>
+				<div class="message_inner" id="inp">
+					<span class="userPhoto"><img src="img/1.jpg"></span>
+					<p class="alignright clearfix title">
+						<span class="font14 floatleft">生日提醒</span>
+						<span class="font12 color-a">2015-8-5  13:52</span>
+					</p>
+					<p class="font14 color-8 mart5"><span class="color-info marr5 strong">Anna Swift</span>将在8-15过生日。</p>
+					<p class="font14 color-8">还剩10天哦！</p>
+				</div>
+			</div>
+			<div class="message_box">
+				<span class="btn btn-delete">删 除</span>
+				<div class="message_inner">
+					<span class="userPhoto"><img src="img/1.jpg"></span>
+					<p class="alignright clearfix title">
+						<span class="font14 floatleft">合同到期提醒</span>
+						<span class="font12 color-a">2015-8-5  13:52</span>
+					</p>
+					<p class="font14 color-8 mart5"><span class="color-info marr5 strong">行走江湖</span>的合同将在8-15到期。</p>
+					<p class="font14 color-8">还剩10天，请提前准备！</p>
+				</div>
+			</div>
+			<div class="message_box">
+				<span class="btn btn-delete">删 除</span>
+				<div class="message_inner">
+					<span class="userPhoto"><img src="img/icon-1.png"></span>
+					<p class="alignright clearfix title">
+						<span class="font14 floatleft">考勤提醒</span>
+						<span class="font12 color-a">2015-8-5  13:52</span>
+					</p>
+					<p class="font14 color-8 mart5">您<span class="marl5 marr5">2015-8-5</span>考勤已被修改</p>
+					<p class="font14 color-8">由<span class="color-info marr5 marl5 strong">迟到</span>变更为<span class="color-info marr5 marl5 strong">正常</span></p>
+				</div>
+			</div>
+			<div class="message_box">
+				<span class="btn btn-delete">删 除</span>
+				<div class="message_inner">
+					<span class="userPhoto"><img src="img/icon-2.png"></span>
+					<p class="alignright clearfix title">
+						<span class="font14 floatleft">工资提醒</span>
+						<span class="font12 color-a">2015-8-5  13:52</span>
+					</p>
+					<p class="font14 color-8 mart5">您<span class="color-info marl5 marr5 strong">8月</span>的工资已经发放。</p>
+					<p class="font14 color-8">请注查收！</p>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript" src="js/jquery.js" ></script>
+	<script type="text/javascript">
+		$(function(){
+			if (/(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent)) {
+//	            $('.message_box').off('touchstart').on('touchstart',function(){
+//					if($(this).hasClass('current')){
+//						$(this).removeClass('current');
+//					}else{
+//						$(this).addClass('current').siblings().removeClass('current');
+//					}
+//				});
+//				$('.btn-delete').off('touchstart').on('touchstart',function(){
+//					$(this).addClass('current');
+//					$(this).parents('.message_box').addClass('remove');
+//					setTimeout(function(){
+//						$('.remove').remove();
+//					},200);
+//				});
+				
+	        } else if (/(Android)/i.test(navigator.userAgent)) {
+	            $('.message_box').off('touchstart').on('touchstart',function(){
+					confirm("确定要删除该条通知？");
+				});
+	        }
+			
+		});
+	</script>
+</html>
