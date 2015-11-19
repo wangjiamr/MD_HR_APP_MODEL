@@ -453,6 +453,12 @@ label.text {
 .color-9 {
 	color: #999;
 }
+.color-plus{
+	color: #bb2200!important;
+}
+.color-minus{
+	color: #06fa5a!important;
+}
 .btn {
 	display: block;
 	height: 4rem;
