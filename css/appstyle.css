@@ -5,6 +5,31 @@ html {
 	font-size: 12px;
 	/*基准值算法 x=(($(window).width())*12)/350*/
 }
+@media only screen and (max-width: 641px){
+    html {
+        font-size: 15px !important;
+    }
+}
+@media only screen and (max-width: 481px){
+    html {
+        font-size: 14px !important;
+    }
+}
+@media only screen and (max-width: 420px){
+    html {
+        font-size: 12px !important;
+    }
+}
+@media only screen and (max-width: 376px){
+    html {
+        font-size: 12px !important;
+    }
+}
+@media only screen and (max-width: 321px){
+    html {
+        font-size: 10px !important;
+    }
+}
 body {
 	-webkit-user-select: none;
 	line-height: 1.6rem;
@@ -1617,13 +1642,26 @@ label.text {
 .message_box.current .message_inner{
 	-webkit-transform: translate(-7rem, 0);
 	-webkit-transition: all .2s ease-in-out 0s;
+	
 }
 .message_box.remove{
 	-webkit-transform: translate(-160%, 0);
 	opacity: 0.4;
 	-webkit-transition: all .2s ease-in 0s;
 }
-
+.number input{
+	display: inline-block;
+	width:4rem;
+	height:4rem;
+	line-height:4rem;
+	border:1px solid #dddddd;
+	background:#fff;
+	/*float: left;*/
+	margin-left:-5px;
+	text-align: center;
+	color:#347cdc;
+	font-size:1.67rem;
+}
 
 
 

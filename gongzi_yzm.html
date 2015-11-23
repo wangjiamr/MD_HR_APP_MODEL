@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<meta name="apple-touch-fullscreen" content="yes"/>
+		<meta content="black-translucent" name="apple-mobile-web-app-status-bar-style"> 
+		<link rel="stylesheet" type="text/css" href="css/appstyle.css">
+		<title>工资查询-验证</title>
+	</head>
+	<body>
+		<header class="header current">
+			<span class="Icon Icon-back"></span>
+			<p>工资查询</p>
+		</header>
+		<div class="main">
+			<p class="aligncenter font17" style="margin-top:50%;">我们已发送<span class="color-info">验证码</span>到您的手机</p>
+			<p class="aligncenter font17 color-info">+86 18801880000</p>
+			<div class="number mart10 aligncenter clearfix">
+				<input type="tel" maxlength="1"/>
+				<input type="tel" maxlength="1"/>
+				<input type="tel" maxlength="1"/>
+				<input type="tel" maxlength="1"/>
+				<input type="tel" maxlength="1"/>
+				<input type="tel" maxlength="1"/>
+			</div>
+			<p class="aligncenter mart20 color-a">接收短信大约需要60秒</p>
+		</div>
+	</body>
+	<script type="text/javascript" src="js/jquery.js" ></script>
+	<script type="text/javascript">
+		function nextInput(){
+			var $this = $(this);
+			if($this.nextAll().length>=1){
+				$this.blur().next('input').focus();
+			}
+		}
+		$(function(){
+			$('input','.number').oninput=function(){
+				nextInput()
+			};
+		});
+
+		
+	</script>
+</html>

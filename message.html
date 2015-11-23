@@ -65,31 +65,21 @@
 			</div>
 		</div>
 	</body>
-	<script type="text/javascript" src="js/jquery.js" ></script>
-	<script type="text/javascript">
-		$(function(){
-			if (/(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent)) {
+<script type="text/javascript" src="js/jquery.js" ></script>
+<script type="text/javascript">
+	
+	
+		
+		
+//		$(function(){
+//			if (/(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent)) {
+//				
+//	        } else if (/(Android)/i.test(navigator.userAgent)) {
 //	            $('.message_box').off('touchstart').on('touchstart',function(){
-//					if($(this).hasClass('current')){
-//						$(this).removeClass('current');
-//					}else{
-//						$(this).addClass('current').siblings().removeClass('current');
-//					}
+//					confirm("确定要删除该条通知？");
 //				});
-//				$('.btn-delete').off('touchstart').on('touchstart',function(){
-//					$(this).addClass('current');
-//					$(this).parents('.message_box').addClass('remove');
-//					setTimeout(function(){
-//						$('.remove').remove();
-//					},200);
-//				});
-				
-	        } else if (/(Android)/i.test(navigator.userAgent)) {
-	            $('.message_box').off('touchstart').on('touchstart',function(){
-					confirm("确定要删除该条通知？");
-				});
-	        }
-			
-		});
+//	        }
+//			
+//		});
 	</script>
 </html>
