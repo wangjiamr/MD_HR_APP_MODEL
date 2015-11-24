@@ -1489,6 +1489,10 @@ label.text {
 	margin-left:1rem;
 	border-bottom: 1px solid #d9d9d9;
 }
+.contacts li.one{
+	border-bottom: 1px solid #d9d9d9;
+}
+.contacts li.one div{border:0;}
 .contacts li:last-child div{
 	border: 0;
 }
