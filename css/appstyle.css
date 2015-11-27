@@ -1723,8 +1723,11 @@ label.text {
 .textarea{width:100%;padding:0.83rem;color: #333;height:8rem;}
 .img {padding:0.83rem;}
 .img img{width:4.17rem;height:4.17rem;}
-
-
+.btnItem{position: absolute;right:0;left:0;bottom:0;height:4.17rem;}
+.btnItem .btn{position:inherit;height:4.17rem;line-height:4.17rem;width:50%;float: left;margin:0;color:#fff;text-align: center;border-radius:0;border:0;}
+.btnItem .btn:nth-child(1){left:0;right:50%;background:#4587c4}
+.btnItem .btn:nth-child(2){right:0;left:50%;background:#48b65a;}
+.company_name{position: absolute;top:83%;left:0;right:0;color:#aaa;}
 
 
 
