@@ -13,14 +13,12 @@
 			<p class="logo aligncenter"><img src="img/logo.png"></p>
 			<div class="login_box">
 				<p>
-					<span>用户名</span>
 					<i class="Icon Icon-count"></i>
-					<input placeholder="" type="text" />
+					<input placeholder="用户名" type="text"/>
 				</p>
 				<p>
-					<span>密码</span>
 					<i class="Icon Icon-pass"></i>
-					<input placeholder="" type="password" />
+					<input placeholder="密码" type="password" />
 				</p>
 			</div>
 			<div class="login_bt aligncenter">
@@ -28,7 +26,7 @@
 				<p class="aligncenter color-8 mart10">忘记密码？</p>
 			</div>
 		</div>
-		<div class="mask" style="display: block;"></div>
+		<div class="mask" style="display: none;"></div>
 			
 		<!--选择网络弹出begin-->
 		<div class="choosenet" style="display:none;">
@@ -52,7 +50,7 @@
 		</div>
 		<!--选择网络弹出over-->
 		<!--提示更新 begin-->
-		<div class="choosenet update" style="display:;">
+		<div class="choosenet update" style="display:none;">
 			<div class="choosenet_out">
 				<div class="choosenetin">
 					<p class="font14">目前有新版本，是否升级？</p>
@@ -74,19 +72,4 @@
 		</div>
 	<!--提示更新 over-->
 	</body>
-	<script src="js/jquery.js"></script>
-	<script>
-		$(function(){
-			$('.login_box').find('input').focus(function(){
-				var $this = $(this);
-				$this.prevAll('span').addClass('current');
-			});
-			$('.login_box').find('input').blur(function(){
-				var $this = $(this);
-				if($this.val()==""){
-					$this.prevAll('span').removeClass('current');
-				}
-			});
-		});
-	</script>
 </html>
