@@ -494,7 +494,7 @@ label.text {
 	margin: 0 2.92rem;
 }
 .btn-blue {
-	background: #4da9fa;
+	background: #ef901b;
 }
 .btn-re{
 	background: #ff9044;
@@ -1447,7 +1447,6 @@ label.text {
 	-webkit-transform: rotate(0deg);
 }
 /*login page*/
-
 .login_layout {
 	background:url(../img/login_mask.png);
 	background-size:cover;
@@ -1479,7 +1478,7 @@ label.text {
 }
 .login_box p input {
 	height: 3.6rem;
-	line-height: 3.6rem;
+	line-height: 3.9rem;
 	color: #888;
 	font-size: 1rem;
 	width: 100%;
@@ -1719,18 +1718,18 @@ label.text {
 .update .choosenetin p.font14{color:#333;}
 .update .choosenetin p{padding-bottom:5px;}
 .update .bottomB{border-top:1px solid #ddd;position:relative;}
-.update .bottomB span.quitBtn{height:40px;line-height:40px;position:relative;width:50%;float:left;border-radius:0;background-color: #fff;color:#444;border-radius:0;margin:0;border-radius:0 0 4px 4px;}
+.update .bottomB span.quitBtn{height:3.33rem;line-height:3.33rem;position:relative;width:50%;float:left;border-radius:0;background-color: #fff;color:#444;border-radius:0;margin:0;border-radius:0 0 4px 4px;}
 .update .bottomB span.quitBtn.current{background-color:#ef901b;color:#fff;}
 .update .bottomB span.quitBtn:last-child{border-radius:0 0 4px 0;border-left:1px solid #ddd;position:absolute;top:0;right:0;}
 .mask{background:#000;opacity: 0.7;position: fixed;top:0;left:0;right:0;bottom:0;}
 .textarea{width:100%;padding:0.83rem;color: #333;height:8rem;}
 .img {padding:0.83rem;}
 .img img{width:4.17rem;height:4.17rem;vertical-align: bottom;}
-.btnItem{position: absolute;right:50px;left:50px;bottom:0;}
-.btnItem .btn{display:block;margin:0;text-align:center;width:100%;height:40px;line-height:47px;margin-bottom:15px;color:#fff;border:1px solid #e1881a;font-size:14px;position:relative;border-radius:3px;}
+.btnItem{position: absolute;right:4.17rem;left:4.17rem;bottom:0;}
+.btnItem .btn{display:block;margin:0;text-align:center;width:100%;height:3.33rem;line-height:3.5rem;margin-bottom:1.25rem;color:#fff;border:1px solid #e1881a;position:relative;border-radius:3px;}
 .btnItem .btn:nth-child(1){background:#ef901b}
 .btnItem .btn:nth-child(2){background:none;color:#888;border-color:#aba7a3;}
-.net{position: absolute;width:100%;bottom:10px;text-align: center;color:#888;z-index:2;}
+.net{position: absolute;width:100%;bottom:0.83rem;text-align: center;color:#888;z-index:2;}
 
 
 
