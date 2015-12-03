@@ -571,6 +571,8 @@ label.text {
 .TopBar .Icon-next {
 	background-image: url(../img/next2.png);
 }
+.TopBar span{display:inline-block;width:33%;text-align: center;float: left;}
+.TopBar span:first-child,.TopBar span:last-child{color:#bbb;}
 .Icon-1,
 .Icon-2,
 .Icon-3,
@@ -622,6 +624,7 @@ label.text {
 	margin-top: -0.58rem;
 	position: relative;
 }
+
 .Icon-count,
 .Icon-pass {
 	width: 1.67rem;
@@ -642,11 +645,13 @@ label.text {
 	top: 0;
 }
 .icon-camera{
-	width:3.33rem;
-	height:2.5rem;
+	width:4.17rem;
+	height:4.17rem;
 	background-image: url(../img/camera.png);
-	background-size: 80%;
-	margin-top:0.5rem;
+	background-size: 50%;
+	position: absolute;
+	right:0;
+	top:0;
 }
 .bg-1 {
 	background: #59a7f9;
@@ -668,6 +673,9 @@ label.text {
 }
 .bg-4 {
 	background: #aaa;
+}
+.current + .icon-circle{
+	background: #fff!important;
 }
 .border-4 {
 	border-color: #aaa;
@@ -1331,7 +1339,7 @@ label.text {
 	border-right: 1px solid #ddd;
 	border-radius: 4px 4px 2px 2px;
 	padding: 0 1.67rem;
-	position: absolute;
+	/*position: absolute;*/
 	left: 2.5rem;
 	right: 2.5rem;
 	top: 2.5rem;
@@ -1340,6 +1348,9 @@ label.text {
 	transition: 0.4s;
 	-webkit-transition: 0.4s;
 	opacity: 0;
+	margin:0 2.5rem;
+	padding-top:0.1rem;
+	margin-top:2rem;
 }
 .cardBottom {
 	height: 10px;
@@ -1360,9 +1371,11 @@ label.text {
 	margin-left: -31px;
 }
 .card-btn{
-	position: absolute;
+	/*position: absolute;*/
 	left: 2.5rem;
 	right: 2.5rem;
+	margin:0 2.5rem;
+	margin-top:3rem;
 	bottom:3rem;
 	-webkit-transform: translate(0, 7.5rem);
 	transition: 0.4s;
@@ -1390,7 +1403,7 @@ label.text {
 }
 
 .item p {
-	height:3rem;
+	min-height:3rem;
 	line-height: 3rem;
 	color:#888;
 }
@@ -1581,7 +1594,7 @@ label.text {
 	padding: 0px 10px;
 }
 .wordCheck span.current,.color-info{
-	color:#347cdc;
+	color:#ef901b;
 }
 .cur_word {
 	width: 5rem;
@@ -1724,7 +1737,7 @@ label.text {
 .mask{background:#000;opacity: 0.7;position: fixed;top:0;left:0;right:0;bottom:0;}
 .textarea{width:100%;padding:0.83rem;color: #333;height:8rem;}
 .img {padding:0.83rem;}
-.img img{width:4.17rem;height:4.17rem;vertical-align: bottom;}
+.img img{width:100%;vertical-align: bottom;}
 .btnItem{position: absolute;right:4.17rem;left:4.17rem;bottom:0;}
 .btnItem .btn{display:block;margin:0;text-align:center;width:100%;height:3.33rem;line-height:3.5rem;margin-bottom:1.25rem;color:#fff;border:1px solid #e1881a;position:relative;border-radius:3px;}
 .btnItem .btn:nth-child(1){background:#ef901b}
