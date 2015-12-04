@@ -648,7 +648,7 @@ label.text {
 	width:4.17rem;
 	height:4.17rem;
 	background-image: url(../img/camera.png);
-	background-size: 50%;
+	background-size: 20px;
 	position: absolute;
 	right:0;
 	top:0;
@@ -729,6 +729,16 @@ label.text {
 }
 .header.active .headerItem:last-child {
 	-webkit-transform: translate(0, 0);
+}
+.header.active_andriod .headerItem:first-child {
+	-webkit-transform: translate(-100%, 0);
+	transition: 0s;
+	-webkit-transition: 0s;
+}
+.header.active_andriod .headerItem:last-child {
+	-webkit-transform: translate(0, 0);
+	transition: 0s;
+	-webkit-transition: 0s;
 }
 .header.hide .headerItem:last-child {
 	-webkit-transform: translate(0, 0);
