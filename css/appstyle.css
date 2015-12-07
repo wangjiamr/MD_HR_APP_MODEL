@@ -1179,10 +1179,10 @@ label.text {
 	padding-left: 0;
 }
 .circle {
-	width: 7.5rem;
-	height: 7.5rem;
+	width: 16.6rem;
+	height: 16.6rem;
 	margin: 0 auto;
-	background: url(../img/circle.png);
+	background: url(../img/circle-n.png);
 	background-size: 100%;
 	background-repeat: no-repeat;
 	position: relative;
@@ -1191,6 +1191,20 @@ label.text {
 .main .circle:first-child {
 	-webkit-transform: rotate(0deg);
 	-webkit-transition: 0.5s;
+}
+body .main + .main{
+	background:#f8f8f8;
+	z-index: 2;
+	transform: translate(0, 100%);
+	-webkit-transform: translate(0, 100%);
+	transition: 0.3s;
+	-webkit-transition: 0.3s;
+}
+body .main + .main.success{
+	transform: translate(0, 0);
+	-webkit-transform: translate(0, 0);
+	transition: 0.3s;
+	-webkit-transition: 0.3s;
 }
 .circle.nobg {
 	margin-top: -7.5rem;
@@ -1204,38 +1218,36 @@ label.text {
 	margin: -2.5rem 0 0 -2.5rem;
 }
 .circle.current {
-	animation: rotate 2s linear infinite;
-	-webkit-animation: rotate 2s linear infinite;
+	animation: rotate 1.5s linear infinite;
+	-webkit-animation: rotate 1.5s linear infinite;
 }
 .circle .userPhoto img {
 	width: 5rem;
 	height: 5rem;
 /*	border: 1px solid #d9d9d9;*/
 }
-.hand,
-.handIn {
-	width: 16.67rem;
-	height: 16.67rem;
-	background: #f0e5e5;
-	border-radius: 50%;
-	position: absolute;
+.hand{
+	width:16rem;
+	height:8rem;
 	left: 50%;
 	bottom: 2.67rem;
-	margin-left: -8.33rem;
+	margin-left: -8rem;
+	position: absolute;
 }
 .hand.current {
 	-webkit-animation: start3 2s 1s infinite ease-in-out;
 	animation: start3 2s 1s infinite ease-in-out;
 }
+.hand p{
+	color: #fdcf96;
+}
 .handIn {
-	display: inline-block;
-	width: 8.33rem;
-	height: 8.33rem;
-	background: #b74b4b url(../img/Fingerprint.png) center center no-repeat;
+	display:block;
+	width: 5.84rem;
+	height: 5.84rem;
+	background:url(../img/Fingerprint.png) center center no-repeat;
 	background-size: 5.83rem;
-	top: 50%;
-	bottom: initial;
-	margin: -4.17rem 0 0 -4.17rem;
+	margin:0 auto;
 }
 .hand.current:after {
 	content: '';
@@ -1305,7 +1317,7 @@ label.text {
 		-webkit-transform: rotate(0deg)
 	}
 	to {
-		-webkit-transform: rotate(360deg)
+		-webkit-transform: rotate(-360deg)
 	}
 }
 @keyframes rotate {
@@ -1313,7 +1325,7 @@ label.text {
 		transform: rotate(0deg)
 	}
 	to {
-		transform: rotate(360deg)
+		transform: rotate(-360deg)
 	}
 }
 @-webkit-keyframes rotateStart {
