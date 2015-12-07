@@ -730,12 +730,12 @@ label.text {
 .header.active .headerItem:last-child {
 	-webkit-transform: translate(0, 0);
 }
-.header.active_andriod .headerItem:first-child {
+.header.active_android .headerItem:first-child {
 	-webkit-transform: translate(-100%, 0);
 	transition: 0s;
 	-webkit-transition: 0s;
 }
-.header.active_andriod .headerItem:last-child {
+.header.active_android .headerItem:last-child {
 	-webkit-transform: translate(0, 0);
 	transition: 0s;
 	-webkit-transition: 0s;
@@ -816,6 +816,7 @@ label.text {
 	position: relative;
 	z-index: 2;
 }
+.shadow{width:100%;height:50px;background: url(../img/shadow.png) no-repeat bottom;background-size:100%;position:absolute;left:0;bottom:0;}
 .ClanderUl {
 	/*width: 9999px;*/
 	
@@ -864,8 +865,7 @@ label.text {
 
 .ClanderUl li table td p:last-child span.current,
 .ClanderTab span.current {
-	background: #ef901b;
-	color: #fff;
+	background: #eaeaea;
 }
 .ClanderTab span.active{
 	background: #eee;
