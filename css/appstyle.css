@@ -643,7 +643,7 @@ label.text {
 	background-image: url(../img/icon-off.png);
 	background-size:1.5rem;
 	left: 0;
-	top: 0;
+	bottom: 0;
 }
 .icon-camera{
 	width:4.17rem;
