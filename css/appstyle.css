@@ -515,6 +515,7 @@ label.text {
 	background-position: center;
 	background-size: 50%;
 }
+
 .Icon-more,
 .Icon-prev,
 .Icon-next,
@@ -529,7 +530,7 @@ label.text {
 }
 .Icon-txt{
 	right:0;
-	top:0;
+	bottom:0;
 	background: none;
 	line-height: 4.17rem;
 }
@@ -548,7 +549,7 @@ label.text {
 }
 .Icon-back{
 	background-image: url(../img/icon-back.png);
-	top: 0;
+	bottom: 0;
 	left: 0;
 }
 .Icon-prev,
@@ -694,6 +695,7 @@ label.text {
 	transition: 0.2s;
 	-webkit-transition: 0.2s;
 }
+
 .header.current {
 	background: #ef901b;
 	transition: 0.1s;
