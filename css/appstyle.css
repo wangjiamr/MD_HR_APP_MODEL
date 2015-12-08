@@ -911,6 +911,7 @@ label.text {
 	border-width: 0.083rem 0;
 	padding-left: 0.83rem;
 	background: #fff;
+	border-top:0;
 }
 .inputList + .inputList {
 	margin-top: -0.083rem;
