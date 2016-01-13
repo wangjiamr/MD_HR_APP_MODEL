@@ -1534,8 +1534,20 @@ body .main + .main.success{
 	color: #888;
 	font-size: 1rem;
 	width: 100%;
-	text-indent: 2.4rem;
+	text-indent: 2.4em;
 	background: none;
+	position:relative;
+	z-index: 2;
+}
+.login_box label{
+	color: #888;
+	position: absolute;
+	bottom:2px;
+	left:2.4rem;
+	right:0;
+	top:3px;
+	z-index:0;
+	line-height:4rem;
 }
 .login_box p span {
 	display: inline-block;

@@ -10,7 +10,7 @@
     "icons": {
         "72": "icon.png"
     },
-    "launch_path": "home.html",/*应用的入口页面，默认为根目录下的index.html；支持网络地址，必须以http://或https://开头*/
+    "launch_path": "login.html",/*应用的入口页面，默认为根目录下的index.html；支持网络地址，必须以http://或https://开头*/
     "developer": {
         "name": "",/*开发者名称*/
         "email": "",/*开发者邮箱地址*/
@@ -199,5 +199,77 @@
                 }
             }
         }
-    },"fullscreen":true
+    },"fullscreen":true,
+	"dependencies": {
+		"pages": {
+			"home.html": {
+				"resources": [
+					"img/icon-2.png",
+					"img/img1.jpg",
+					"css/appstyle.css",
+					"img/1.jpg",
+					"img/icon-1.png",
+					"img/whitemask10.png",
+					"img/icon-4.png",
+					"img/icon-3.png",
+					"img/icon-back.png",
+					"img/icon-more.png",
+					"img/shadow.png",
+					"js/jquery.js"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"login.html": {
+				"resources": [
+					"img/login_mask.png",
+					"css/appstyle.css",
+					"img/icon-count.png",
+					"img/logo.png",
+					"img/icon-pass.png",
+					"js/jquery.js"
+				],
+				"refer": [],
+				"priority": 0
+			}
+		},
+		"idle": {
+			"resources": [
+				"splash.html",
+				"js/jquery-ui.min.js",
+				"img/next2.png",
+				"img/circle-n.png",
+				"img/circle.png",
+				"img/prev.png",
+				"img/next.png",
+				"gongzi_1.html",
+				"menu.html",
+				"img/camera.png",
+				"send.html",
+				"js/blur.js",
+				"daka-1.html",
+				"img/icon-off.png",
+				"right_slide.html",
+				"gongzi_months.html",
+				"my_team.html",
+				"img/arrow-r.png",
+				"message.html",
+				"img/arrow-t.png",
+				"gongzi_cx.html",
+				"my_holiday.html",
+				"choose-month.html",
+				"switch.html",
+				"setting.html",
+				"img/bottom-x.png",
+				"img/Fingerprint.png",
+				"my_team2.html",
+				"wode_kaoqin.html",
+				"gongzi_yzm.html",
+				"img/map.png",
+				"img/circle-b.jpg",
+				"img/prev2.png",
+				"img/arrow-t2.png"
+			]
+		}
+	}
 }
