@@ -281,7 +281,7 @@ label.text {
 	margin-left: 15px!important;
 }
 .marl20 {
-	margin-left: 1!important;
+	margin-left: 1.7rem!important;
 }
 .marl25 {
 	margin-left: 2.08rem!important;
@@ -654,6 +654,18 @@ label.text {
 	right:0;
 	top:0;
 }
+.Icon-clander,.Icon-clock2{
+	width:15px;
+	height:16px;
+	background-image:url(../img/clander.png);
+	background-size:100%;
+	position:relative;
+	top:2px;
+}
+.Icon-clock2{
+	width:16px;
+	background-image: url(../img/clock2.png);
+	}
 .bg-1 {
 	background: #59a7f9;
 }
@@ -1787,13 +1799,36 @@ body .main + .main.success{
 .update .bottomB span.quitBtn:last-child{border-radius:0 0 4px 0;border-left:1px solid #ddd;position:absolute;top:0;right:0;}
 .mask{background:#000;opacity: 0.7;position: fixed;top:0;left:0;right:0;bottom:0;}
 .textarea{width:100%;padding:0.83rem;color: #333;height:8rem;}
-.img {padding:0.83rem;}
-.img img{width:100%;vertical-align: bottom;}
+.img .userPhoto,.img .userPhoto img{width:3.4rem;height:3.4rem;margin:0;}
+.img li{padding:10px 0;position: relative;}
+.img {border-top:1px solid #d9d9d9;}
 .btnItem{position: absolute;right:4.17rem;left:4.17rem;bottom:0;}
 .btnItem .btn{display:block;margin:0;text-align:center;width:100%;height:3.33rem;line-height:3.5rem;margin-bottom:1.25rem;color:#fff;border:1px solid #e1881a;position:relative;border-radius:3px;}
 .btnItem .btn:nth-child(1){background:#ef901b}
 .btnItem .btn:nth-child(2){background:none;color:#888;border-color:#aba7a3;}
 .net{position: absolute;width:100%;bottom:0.83rem;text-align: center;color:#888;z-index:2;}
+.map_mini{width:8.4rem;height:8.4rem;}
+.map_mini img{width:100%;height:100%;}
+.map_txt{line-height:20px;color:#666;}
+.map_set{position: absolute;bottom:0;line-height:3rem;right:0;left:9.2rem;}
+.map_img span{width:4.17rem;height:4.17rem;background:#ddd url(../img/camera.png) no-repeat center;background-size:50%;}
+.map_img img{width:4.17rem;height:4.17rem;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
