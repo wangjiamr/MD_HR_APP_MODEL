@@ -1814,14 +1814,17 @@ body .main + .main.success{
 .map_img span{width:4.17rem;height:4.17rem;background:#ddd url(../img/camera.png) no-repeat center;background-size:50%;}
 .map_img img{width:4.17rem;height:4.17rem;}
 
-
-
-
-
-
-
-
-
+/*2015-1-18*/
+.new_login{background:#f9f9f9;}
+.new_login .login_box{width:100%;margin:0;position: relative;left:0;top:70px;}
+.new_login .login_box p{background:#fff;}
+.new_login .login_box p input{text-indent:1rem;}
+.new_login .login_box p label{left:1rem;}
+.new_login .btnItem{left:20px;right:20px;bottom:inherit;top:200px;}
+.new_login .btnItem .btn:nth-child(1){background: none;color:#ef901b;}
+.new_login #bottomBtn{top:inherit;bottom:10px;}
+.new_login #bottomBtn p:first-child{border-bottom:1px solid #ccc;margin-bottom:25px;}
+.new_login #bottomBtn p:first-child span{background:#f9f9f9;padding:0 15px;position: relative;bottom:-10px;}
 
 
 
