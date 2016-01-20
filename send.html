@@ -35,6 +35,7 @@
 					</span>
 				</li>
 				<li class="clearfix">
+					<div class="map_cover"></div>
 					<div class="map_mini floatleft marr10"><img src="img/img1.jpg"></div>
 					<p class="map_txt font14 marr5">北京朝阳区八里庄路，西大望路华贸商务楼16号楼</p>
 					<span class="font12 color-a map_set">点击地图进入位置微调</span>
@@ -52,4 +53,11 @@
 			<span class="block btn btn-re aligncenter color-white font17 mart30">提 交</span>
 		</div>
 	</body>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script src='js/autosize.js'></script>
+<script>
+	$(function(){
+		autosize(document.querySelectorAll('.textarea'));
+	});
+</script>
 </html>
