@@ -1800,7 +1800,7 @@ body .main + .main.success{
 .update .bottomB span.quitBtn.current{background-color:#ef901b;color:#fff;}
 .update .bottomB span.quitBtn:last-child{border-radius:0 0 4px 0;border-left:1px solid #ddd;position:absolute;top:0;right:0;}
 .mask{background:#000;opacity: 0.7;position: fixed;top:0;left:0;right:0;bottom:0;}
-.textarea{width:100%;padding:0.83rem;color: #333;height:6rem;}
+.textarea{width:100%;padding:0.83rem 0;color: #333;height:6rem;}
 .img .userPhoto,.img .userPhoto img{width:3.4rem;height:3.4rem;margin:0;}
 .img li{padding:10px 0;position: relative;}
 .img {border-top:1px solid #d9d9d9;}
@@ -1809,8 +1809,9 @@ body .main + .main.success{
 .btnItem .btn:nth-child(1){background:#ef901b}
 .btnItem .btn:nth-child(2){background:none;color:#888;border-color:#aba7a3;}
 .net{position: absolute;width:100%;bottom:0.83rem;text-align: center;color:#888;z-index:2;}
-.map_mini{width:8.4rem;height:8.4rem;}
+.map_mini,.map_cover{width:8.4rem;height:8.4rem;}
 .map_mini img{width:100%;height:100%;}
+.map_cover{position: absolute;;}
 .map_txt{line-height:20px;color:#666;}
 .map_set{position: absolute;bottom:0;line-height:3rem;right:0;left:9.2rem;}
 .map_img span{width:4.17rem;height:4.17rem;background:#ddd url(../img/camera.png) no-repeat center;background-size:50%;}
