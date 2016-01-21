@@ -1454,7 +1454,10 @@ body .main + .main.success{
 	padding:1rem 0;
 	border-bottom:1px solid #eee;
 }
+.item div{position: relative;}
+.item div.map_cover{position: absolute;z-index:2;}
 .item p.p-top5{line-height:1.5rem;}
+.item .map_set{height:2rem;line-height:3.5rem;left:6rem;text-align: right;}
 /*.item p {
 	min-height:3rem;
 	line-height: 3rem;
@@ -1810,8 +1813,9 @@ body .main + .main.success{
 .btnItem .btn:nth-child(2){background:none;color:#888;border-color:#aba7a3;}
 .net{position: absolute;width:100%;bottom:0.83rem;text-align: center;color:#888;z-index:2;}
 .map_mini,.map_cover{width:8.4rem;height:8.4rem;}
+.item .map_cover{width:5rem;height:5rem;}
 .map_mini img{width:100%;height:100%;}
-.map_cover{position: absolute;;}
+.map_cover{position: absolute;background: #000;}
 .map_txt{line-height:20px;color:#666;}
 .map_set{position: absolute;bottom:0;line-height:3rem;right:0;left:9.2rem;}
 .map_img span{width:4.17rem;height:4.17rem;background:#ddd url(../img/camera.png) no-repeat center;background-size:50%;}
