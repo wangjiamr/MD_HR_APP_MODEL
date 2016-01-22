@@ -1841,6 +1841,26 @@ body .main + .main.success{
 .tag-abnormal{background-image: url(../img/dakayic.png);}
 .tag-early{background-image: url(../img/zaotui.png);}
 
+.map_list{height:40%;position: fixed;background:#fff;left:0;right:0;bottom:0;box-shadow: 1px 0 10px rgba(0,0,0,.4);overflow-y: auto;}
+.map_list ul li{border-bottom:1px solid #ccc;padding:1.2rem 1rem 0.5rem 1rem;line-height:1.5rem;}
+.map_list ul li p{width:100%;}
+.map_list ul li p:last-child{color:#666;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
