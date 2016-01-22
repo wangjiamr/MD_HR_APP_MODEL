@@ -10,7 +10,7 @@
     "icons": {
         "72": "icon.png"
     },
-    "launch_path": "login.html",/*应用的入口页面，默认为根目录下的index.html；支持网络地址，必须以http://或https://开头*/
+    "launch_path": "send.html",/*应用的入口页面，默认为根目录下的index.html；支持网络地址，必须以http://或https://开头*/
     "developer": {
         "name": "",/*开发者名称*/
         "email": "",/*开发者邮箱地址*/
@@ -231,6 +231,21 @@
 				],
 				"refer": [],
 				"priority": 0
+			},
+			"send.html": {
+				"resources": [
+					"img/img1.jpg",
+					"img/clock2.png",
+					"css/appstyle.css",
+					"js/autosize.js",
+					"img/1.jpg",
+					"img/icon-back.png",
+					"img/clander.png",
+					"img/camera.png",
+					"js/jquery.js"
+				],
+				"refer": [],
+				"priority": 0
 			}
 		},
 		"idle": {
@@ -244,8 +259,6 @@
 				"img/next.png",
 				"gongzi_1.html",
 				"menu.html",
-				"img/camera.png",
-				"send.html",
 				"js/blur.js",
 				"daka-1.html",
 				"img/icon-off.png",
