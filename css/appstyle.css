@@ -1196,6 +1196,7 @@ label.text {
 	margin-left: 1.25rem;
 	padding-left: 0;
 }
+.ListItem li dl dd p:first-child{border-top:0;}
 .circle {
 	width: 16.6rem;
 	height: 16.6rem;
@@ -1497,7 +1498,7 @@ body .main + .main.success{
 	position: relative;
 }
 .wage_out .inputList:last-child {
-	margin-top: -2px;
+	margin-top: -1px;
 	-webkit-transform: translate(0, -40px);
 	transition: 0.2s;
 	-webkit-transition: 0.2s;
@@ -1515,6 +1516,9 @@ body .main + .main.success{
 	transform: rotate(0deg);
 	-webkit-transform: rotate(0deg);
 }
+.month .wage_out{border-bottom:1px solid #d9d9d9;transition:0.3s}
+.month .wage_out ul{transition:0.3s;overflow: hidden;}
+.month .wage_out:last-child{border:0;}
 /*login page*/
 .login_layout {
 	background:url(../img/login_mask.png);
@@ -1815,7 +1819,7 @@ body .main + .main.success{
 .map_mini,.map_cover{width:8.4rem;height:8.4rem;}
 .item .map_cover{width:5rem;height:5rem;}
 .map_mini img{width:100%;height:100%;}
-.map_cover{position: absolute;background: #000;}
+.map_cover{position: absolute;}
 .map_txt{line-height:20px;color:#666;}
 .map_set{position: absolute;bottom:0;line-height:3rem;right:0;left:9.2rem;}
 .map_img span{width:4.17rem;height:4.17rem;background:#ddd url(../img/camera.png) no-repeat center;background-size:50%;}
