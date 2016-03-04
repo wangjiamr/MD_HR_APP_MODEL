@@ -1849,7 +1849,7 @@ body .main + .main.success{
 .map_list ul li{border-bottom:1px solid #ccc;padding:1.2rem 1rem 0.5rem 1rem;line-height:1.5rem;}
 .map_list ul li p{width:100%;}
 .map_list ul li p:last-child{color:#666;}
-
+.map {width: 100%;height: 100%;overflow: hidden;margin: 0;font-family: "微软雅黑";}
 
 
 
