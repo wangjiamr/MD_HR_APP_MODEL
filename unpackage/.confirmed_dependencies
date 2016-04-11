@@ -1,0 +1,37 @@
+{
+  "my_team.html": {
+    "resources": [
+      "img/img1.jpg",
+      "css/appstyle.css",
+      "img/1.jpg",
+      "img/whitemask10.png",
+      "img/phone.png",
+      "img/email.png"
+    ],
+    "refer": []
+  },
+  "home.html": {
+    "resources": [
+      "img/icon-2.png",
+      "img/img1.jpg",
+      "css/appstyle.css",
+      "img/1.jpg",
+      "img/icon-1.png",
+      "img/whitemask10.png",
+      "img/icon-4.png",
+      "img/icon-3.png",
+      "img/icon-back.png",
+      "img/icon-more.png",
+      "img/shadow.png",
+      "js/jquery.js"
+    ],
+    "refer": []
+  },
+  "switch.html": {
+    "resources": [
+      "css/appstyle.css",
+      "js/jquery.js"
+    ],
+    "refer": []
+  }
+}

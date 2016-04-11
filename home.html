@@ -33,10 +33,11 @@
 //					WebviewObject plus.webview.getWebviewById('switchPage').hide("slide-out-top");
 //				});
 			});
+			document.documentElement.style.fontSize = document.documentElement.clientWidth / 7.5 + 'px';
 		</script>
 	</head>
 	<body>
-		<header class="header current active">
+		<header class="header active ">
 			<div class="headerItem">
 				<span class="Icon Icon-more" id="menu"></span>
 				<p>明道HR</p>
@@ -48,8 +49,8 @@
 		</header>
 		<div class="TopBoard" style="background-image: url(img/img1.jpg);">
 			<span class="block photo"><img src="img/1.jpg"></span>
-			<p class="aligncenter font15 color-white mart50 p-top20">行走江湖</p>
-			<p class="aligncenter font12 color-white p-top10">明道北京研发部门</p>
+			<p class="aligncenter font17 color-white">行走江湖</p>
+			<p class="aligncenter font14 color-white">明道北京研发部门</p>
 			<!--<div class="BottomBar aligncenter font14 color-white">
 				<span class="Icon Icon-prev"></span>
 				<span class="Icon Icon-next"></span>
@@ -155,7 +156,7 @@
 //  })(document, window);
 //  
 $(function(){
-	console.log($(window).width());
+//	console.log($(window).width());
 	clandersize();
 	$(window).resize(function(){
 		clandersize();
