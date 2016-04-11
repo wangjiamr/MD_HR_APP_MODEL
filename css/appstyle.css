@@ -510,7 +510,7 @@ label.text {
 	height: 0.88rem;
 	background-image: url(../img/icon-more.png);
 	position: absolute;
-	background-size: 40%;
+	background-size: 60%;
 }
 .Icon-txt{
 	right:0;
@@ -567,9 +567,8 @@ label.text {
 	height: 0.8rem;
 	background-image: url(../img/icon-1.png);
 	background-size: 97%;
-	margin: 0 auto;
-	margin-top:0.2rem;
-	margin-bottom: -0.4rem;
+	margin:0.2rem auto;
+
 }
 .Icon-2 {
 	background-image: url(../img/icon-2.png);
