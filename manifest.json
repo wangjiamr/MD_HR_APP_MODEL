@@ -10,7 +10,7 @@
     "icons": {
         "72": "icon.png"
     },
-    "launch_path": "send.html",/*应用的入口页面，默认为根目录下的index.html；支持网络地址，必须以http://或https://开头*/
+    "launch_path": "switch.html",/*应用的入口页面，默认为根目录下的index.html；支持网络地址，必须以http://或https://开头*/
     "developer": {
         "name": "",/*开发者名称*/
         "email": "",/*开发者邮箱地址*/
@@ -199,7 +199,7 @@
                 }
             }
         }
-    },"fullscreen":true,
+    },"fullscreen":false,
 	"dependencies": {
 		"pages": {
 			"home.html": {
@@ -246,6 +246,26 @@
 				],
 				"refer": [],
 				"priority": 0
+			},
+			"my_team.html": {
+				"resources": [
+					"img/img1.jpg",
+					"css/appstyle.css",
+					"img/1.jpg",
+					"img/whitemask10.png",
+					"img/phone.png",
+					"img/email.png"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"switch.html": {
+				"resources": [
+					"css/appstyle.css",
+					"js/jquery.js"
+				],
+				"refer": [],
+				"priority": 0
 			}
 		},
 		"idle": {
@@ -264,14 +284,12 @@
 				"img/icon-off.png",
 				"right_slide.html",
 				"gongzi_months.html",
-				"my_team.html",
 				"img/arrow-r.png",
 				"message.html",
 				"img/arrow-t.png",
 				"gongzi_cx.html",
 				"my_holiday.html",
 				"choose-month.html",
-				"switch.html",
 				"setting.html",
 				"img/bottom-x.png",
 				"img/Fingerprint.png",
