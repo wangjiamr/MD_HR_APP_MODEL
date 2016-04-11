@@ -369,7 +369,7 @@ label.text {
 	font-size:11px!important;
 }
 .font12 {
-	font-size:12px!important;
+	font-size:13px!important;
 }
 .font13 {
 	font-size:13px!important;
@@ -506,17 +506,17 @@ label.text {
 .Icon-back,
 .Icon-off ,
 .Icon-txt{
-	width: 0.88rem;
-	height: 0.88rem;
+	width: 50px;
+	height: 50px;
 	background-image: url(../img/icon-more.png);
 	position: absolute;
-	background-size: 60%;
+	background-size:40%;
 }
 .Icon-txt{
 	right:0;
 	bottom:0;
 	background: none;
-	line-height: 4.17rem;
+	line-height:50px;
 }
 .Icon-more {
 	left: 0;
@@ -680,8 +680,8 @@ label.text {
 }
 .header {
 	width: 100%;
-	height: 0.88rem;
-	line-height:0.88rem;
+	height:50px;
+	line-height:50px;
 	color: #fff;
 	font-size:17px;
 	text-align: center;
@@ -1197,8 +1197,8 @@ label.text {
 }
 .ListItem li dl dd p:first-child{border-top:0;}
 .circle {
-	width: 16.6rem;
-	height: 16.6rem;
+	width:4rem;
+	height:4rem;
 	margin: 0 auto;
 	background: url(../img/circle-n.png);
 	background-size: 100%;
@@ -1256,11 +1256,11 @@ body .main + .main.success{
 /*	border: 1px solid #d9d9d9;*/
 }
 .hand{
-	width:16rem;
-	height:8rem;
+	width:3rem;
+	height:2rem;
 	left: 50%;
-	bottom: 2.67rem;
-	margin-left: -8rem;
+	bottom:1rem;
+	margin-left: -1.5rem;
 	position: absolute;
 }
 .hand.current {
@@ -1272,10 +1272,10 @@ body .main + .main.success{
 }
 .handIn {
 	display:block;
-	width: 5.84rem;
-	height: 5.84rem;
+	width:1.4rem;
+	height:1.4rem;
 	background:url(../img/Fingerprint.png) center center no-repeat;
-	background-size: 5.83rem;
+	background-size:100%;
 	margin:0 auto;
 }
 .hand.current:after {
@@ -1403,7 +1403,7 @@ body .main + .main.success{
 	margin-top:0.4rem;
 }
 .Card .title,.Card .title span{height:0.8rem;line-height:0.8rem;position: relative;}
-.Card .title span.marr15{position: absolute;right:0.1rem;bottom:0.3rem;}
+.Card .title span.marr15{position: absolute;right:0.1rem;}/*bottom:0.3rem;*/
 .cardBottom {
 	height: 10px;
 	position: absolute;
@@ -1456,7 +1456,7 @@ body .main + .main.success{
 }
 .item div{position: relative;}
 .item div.map_cover{position: absolute;z-index:2;}
-.item p.p-top5{font-size:14px;line-height:0.4rem;}
+.item p.p-top5{font-size:13px;line-height:0.4rem;padding:0.1rem 0 !important}
 .item .map_set{height:1rem;line-height:1.7rem;left:1.4rem;text-align: right;}
 /*.item p {
 	min-height:3rem;
