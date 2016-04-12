@@ -1144,6 +1144,7 @@ label.text {
 }
 .wage li span.lable {
 	color: #888;
+	width: 30%;
 }
 .wageTitle {
 	background: #eee;
@@ -1158,10 +1159,13 @@ label.text {
 
 }
 .wage li .placeTxt {
+	display: inline-block;
+	width: 64%;
 	padding: 0;
 	background: none;
 	color: #2a2a2a;
-	
+	float: none;
+	margin:0;
 }
 /*.ListDiv{overflow-y: auto;}*/
 
@@ -1193,9 +1197,7 @@ label.text {
 .ListItem li dl dd p {
 	line-height:0.9rem;
 	border-top: 1px solid #d9d9d9;
-	margin-left:0.4rem;
-	padding-left: 0;
-}
+	margin-left:0.4rem;}
 .ListItem li dl dd p:first-child{border-top:0;}
 .circle {
 	width:4rem;
@@ -1206,7 +1208,7 @@ label.text {
 	background-repeat: no-repeat;
 	position: relative;
 	z-index: 2;
-	padding-top:100px!important;
+	margin-top:100px!important;
 }
 .main .circle:first-child {
 	-webkit-transform: rotate(0deg);
@@ -1490,7 +1492,7 @@ body .main + .main.success{
 	-webkit-transition: 0.4s;
 }
 /*工资查询*/
-
+/*.wage_out .inputList li{min-height:40px;height:40px;}*/
 .wage_out + .wage_out {
 	margin-top: -3px;
 }
