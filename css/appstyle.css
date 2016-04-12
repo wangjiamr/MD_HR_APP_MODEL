@@ -1502,18 +1502,18 @@ body .main + .main.success{
 }
 .wage_out .inputList:last-child {
 	margin-top: -1px;
-	-webkit-transform: translate(0, -40px);
-	transition: 0.2s;
-	-webkit-transition: 0.2s;
+	-webkit-transform: translate(0, 0);
+	transition: 0.1s;
+	-webkit-transition: 0.1s;
 	overflow: hidden;
 	height: 0;
 }
 .wage_out.current .inputList:last-child {
-	height: auto;
+	/*height: auto;*/
 	overflow: visible;
 	-webkit-transform: translate(0, 0px);
-	transition: 0.2s;
-	-webkit-transition: 0.2s;
+	transition: 0.1s;
+	-webkit-transition: 0.1s;
 }
 .wage_out.current .Icon-arrow-t {
 	transform: rotate(0deg);
