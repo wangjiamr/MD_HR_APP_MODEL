@@ -522,8 +522,8 @@ label.text {
 	left: 0;
 	top: 0;
 	z-index: 3;
-	transition: 0.3s;
-	-webkit-transition: 0.3s;
+	transition: 0.2s;
+	-webkit-transition: 0.2s;
 }
 .Icon-more.current {
 	-webkit-transform: rotate(90deg);
@@ -719,6 +719,7 @@ label.text {
 	left:0;
 	right:0;
 }
+.header .headerItem:first-child{z-index: 2;}
 .header .headerItem:last-child {
 	/*background: #ef901b;*/
 	/*margin-top: -4.17rem;*/
@@ -732,6 +733,7 @@ label.text {
 }
 .header.active .headerItem:last-child {
 	-webkit-transform: translate(0, 0);
+	z-index: 3
 }
 .header.active_android .headerItem:first-child {
 	-webkit-transform: translate(-100%, 0);
@@ -742,6 +744,7 @@ label.text {
 	-webkit-transform: translate(0, 0);
 	transition: 0s;
 	-webkit-transition: 0s;
+	z-index: 3;
 }
 .header.hide .headerItem:last-child {
 	-webkit-transform: translate(0, 0);
