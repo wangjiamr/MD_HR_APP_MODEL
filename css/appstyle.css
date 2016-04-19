@@ -1393,7 +1393,7 @@ body .main + .main.success{
 	padding-bottom:0.4rem;
 	border-left: 1px solid #ddd;
 	border-right: 1px solid #ddd;
-	border-radius: 4px 4px 2px 2px;
+	border-radius: 4px 4px 6px 2px;
 	/*position: absolute;*/
 	left: 2.5rem;
 	right: 2.5rem;
@@ -1413,8 +1413,8 @@ body .main + .main.success{
 	height: 10px;
 	position: absolute;
 	background: url(../img/bottom-x.png) repeat-x;
-	bottom: -4px;
-	left: 0;
+	bottom: -3px;
+	left:0;
 	right: 0;
 	background-size: 13px;
 }
@@ -1723,9 +1723,10 @@ body .main + .main.success{
 	background-position:94% center;
 }
 .message_box {
+	position: relative;
 	-webkit-user-select: none;
 	position: relative;
-	-webkit-transition: all .1s linear 0s;
+	-webkit-transition:0.2s;
 }
 .message_box .message_inner{
 	border-radius:4px;
@@ -1771,7 +1772,7 @@ body .main + .main.success{
 	position:absolute;
 	top:50%;
 	margin-top:-0.3rem;
-	right:0.3rem;
+	right:-1.5rem;
 }
 .message_box.current .message_inner{
 	-webkit-transform: translate(-1.7rem, 0);
