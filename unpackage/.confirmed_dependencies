@@ -33,5 +33,15 @@
       "js/jquery.js"
     ],
     "refer": []
+  },
+  "message.html": {
+    "resources": [
+      "img/icon-2.png",
+      "css/appstyle.css",
+      "img/1.jpg",
+      "img/icon-1.png",
+      "img/icon-back.png",
+      "js/jquery.js"
+    ]
   }
 }
