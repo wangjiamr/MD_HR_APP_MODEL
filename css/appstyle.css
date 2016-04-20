@@ -1189,6 +1189,7 @@ label.text {
 	overflow: hidden;
 	transition: 0.2s;
 	-webkit-transition: 0.2s;
+	position: relative;
 }
 .ListItem li.current {
 	transition: 0.2s;
@@ -1197,6 +1198,14 @@ label.text {
 .ListItem li p {
 	padding: 0 0.3rem 0 0.3rem;
 	line-height:1.2rem;
+}
+.ListItem li .Icon-arrow-t{
+	left: inherit;
+	right:0.4rem;
+	top:30px;
+}
+.ListItem li.current .Icon-arrow-t{
+	transform: rotate(-3deg);
 }
 /*.ListItem li dl{display: none;}
 .ListItem li.current dl{display: block;}*/
