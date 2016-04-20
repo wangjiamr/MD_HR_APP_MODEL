@@ -58,7 +58,7 @@
 			</div>-->
 			<div class="shadow"></div>
 		</div>
-		<div class="ClanderBar">
+		<div class="ClanderBar" style="display: none;">
 			<ul class="ClanderUl clearfix" style="-webkit-transform:translate(0,0);">
 				<li>
 					<table>
@@ -104,12 +104,12 @@
 				</tr>
 				<tr>
 					<td><i class="Icon Icon-3"></i><span class="font14 color-9">我的团队</span></td>
-					<td><i class="Icon Icon-4"></i><span class="font14 color-9">在线打卡</span></td>
+					<td style="-webkit-filter: grayscale(540%);"><i class="Icon Icon-4"></i><span class="font14 color-9">在线打卡</span></td>
 				</tr>
 			</table>
 		</div>
 		<!--下拉的菜单begin-->
-		<div class="menu" style="display: ;">
+		<div class="menu" style="display: none;">
 			<ul class="nav mart50 p-top20">
 				<li>个人设置</li>
 				<li>我的假期</li>
@@ -137,7 +137,7 @@
 			"width":$(window).width()
 		});
 		$('.BtnItem').css({
-			"height":$(window).height()-($top_h+$cla_h)-2
+			"height":$(window).height()-($top_h)-2
 		});
 	}
 //	//计算html 基准 

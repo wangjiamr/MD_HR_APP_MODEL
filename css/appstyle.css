@@ -603,8 +603,8 @@ label.text {
 }
 .icon-circle {
 	display: block;
-	width: 0.06rem;
-	height: 0.06rem;
+	width:3px;
+	height:3px;
 	border-radius: 50%;
 	margin: 0 auto;
 	margin-top: -0.15rem;
@@ -675,7 +675,16 @@ label.text {
 	background: #aaa;
 }
 .current + .icon-circle{
-	background: #fff!important;
+	/*background: #fff!important;*/
+}
+.color-work{
+	background: #69bd87;
+}
+.color-rest{
+	background: #bfc1c0;
+}
+.color-leave{
+	background: #89b4e2;
 }
 .border-4 {
 	border-color: #aaa;
@@ -1393,7 +1402,7 @@ body .main + .main.success{
 	padding-bottom:0.4rem;
 	border-left: 1px solid #ddd;
 	border-right: 1px solid #ddd;
-	border-radius: 4px 4px 6px 2px;
+	border-radius: 4px 4px 2px 2px;
 	/*position: absolute;*/
 	left: 2.5rem;
 	right: 2.5rem;
@@ -1413,10 +1422,10 @@ body .main + .main.success{
 	height: 10px;
 	position: absolute;
 	background: url(../img/bottom-x.png) repeat-x;
-	bottom: -3px;
+	bottom: -5px;
 	left:0;
 	right: 0;
-	background-size: 13px;
+	background-size: 10px;
 }
 .circleBt {
 	width: 62px;
