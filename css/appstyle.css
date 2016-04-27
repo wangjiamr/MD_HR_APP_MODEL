@@ -1884,8 +1884,8 @@ body .main + .main.success{
 .Icon-phone{left:45%;}
 .current .Icon-email{right:10%;transition:0.3s;}
 .current .Icon-phone{left:10%;transition:0.3s;}
-
-
+.bottom_txt{line-height:40px;}
+.bottom_txt span{display:inline-block;width:26%;padding-right: 10px;}
 
 
 
