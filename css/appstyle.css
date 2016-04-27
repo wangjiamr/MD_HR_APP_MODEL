@@ -1178,11 +1178,11 @@ label.text {
 	margin:0;
 }
 /*.ListDiv{overflow-y: auto;}*/
-.wageTitle li,.wageTitle li span.placeTxt,.wageTitle li span.lable{
+/*.wageTitle li,.wageTitle li span.placeTxt,.wageTitle li span.lable{
 	min-height: 0;
 	height:0.8rem;
 	line-height:0.8rem;
-}
+}*/
 .ListItem li {
 	display: block;
 	height: 1.2rem;
