@@ -594,7 +594,7 @@ label.text {
 	background-size: 100%;
 	position: absolute;
 	top: 50%;
-	left: -0.5rem;
+	right:0.3rem;
 	margin-top: -0.15rem;
 	transform: rotate(180deg);
 	-webkit-transform: rotate(180deg);
@@ -1152,7 +1152,7 @@ label.text {
 .wage {
 }
 .month .wage {
-	padding-left:0.8rem;
+	padding-left:0.4rem;
 }
 .wage li span.lable {
 	color: #888;
