@@ -1014,6 +1014,7 @@ label.text {
 .inputList li.has-error .lableTxt {
 	display: block;
 }
+.contract li{padding:10px 0;line-height:0.5rem;}
 .switch,.switch i.before{
 	display: inline-block;
 	width:60px;
