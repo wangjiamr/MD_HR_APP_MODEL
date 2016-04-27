@@ -926,6 +926,7 @@ label.text {
 .inputList + .inputList {
 	margin-top: -0.083rem;
 }
+.wage_out .wage_out .inputList{border-top:0;}
 .inputList li {
 	min-height:0.5rem;
 	line-height:1rem;
@@ -1162,9 +1163,7 @@ label.text {
 	padding-left:0.5rem;
 }
 
-.wage li,.wage li span.lable{
 
-}
 .wageTitle li span.lable {
 	color: #2a2a2a;
 
@@ -1179,7 +1178,11 @@ label.text {
 	margin:0;
 }
 /*.ListDiv{overflow-y: auto;}*/
-
+.wageTitle li,.wageTitle li span.placeTxt,.wageTitle li span.lable{
+	min-height: 0;
+	height:0.8rem;
+	line-height:0.8rem;
+}
 .ListItem li {
 	display: block;
 	height: 1.2rem;
@@ -1516,6 +1519,9 @@ body .main + .main.success{
 .wage_out + .wage_out {
 	margin-top: -3px;
 }
+.month .wage_out  .wage_out {
+	margin-top: 0px;
+}
 .wage_out .inputList:first-child {
 	z-index: 2;
 	position: relative;
@@ -1539,9 +1545,11 @@ body .main + .main.success{
 	transform: rotate(0deg);
 	-webkit-transform: rotate(0deg);
 }
-.month .wage_out{border-bottom:1px solid #d9d9d9;transition:0.3s}
+.month .wage_out{transition:0.3s}/*border-bottom:1px solid #d9d9d9;*/
 .month .wage_out ul{transition:0.3s;overflow: hidden;}
-.month .wage_out:last-child{border:0;}
+.month .wage_out:last-child{border:0!important;}
+.month .wage_out .wage_out{display: none;}
+.month .wage_out.current .wage_out{display: block;}
 /*login page*/
 .login_layout {
 	background:url(../img/login_mask.png);
