@@ -1149,7 +1149,29 @@ label.text {
 	background: #eee;
 	padding-left:0;
 }
-.wage {
+.wage.inputList li{
+	min-height: 0;
+	height: auto;
+	line-height: 0.8rem;
+}
+.wage.inputList li span.lable{
+	text-indent: 0.2rem;
+	font-size:13px;
+	min-height: 0;
+	height: auto;
+	line-height: 0.8rem;
+}
+.wage.inputList li .placeTxt,.wageTitle.inputList.nobg li span.lable{
+	min-height: 0;
+	height: auto;
+	line-height: 0.8rem;
+}
+.wageTitle.inputList li span.lable{
+	text-indent:0;
+	font-size:14px;
+	min-height: 0;
+	height: auto;
+	line-height: 1rem;
 }
 .month .wage {
 	padding-left:0.4rem;
