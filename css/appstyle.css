@@ -1178,7 +1178,7 @@ label.text {
 }
 .wage li span.lable {
 	color: #888;
-	width: 30%;
+	width: 45%;
 }
 .wageTitle {
 	background: #eee;
@@ -1192,12 +1192,13 @@ label.text {
 }
 .wage li .placeTxt {
 	display: inline-block;
-	width: 64%;
+	width: 40%;
 	padding: 0;
 	background: none;
 	color: #2a2a2a;
-	float: none;
+	float: right;
 	margin:0;
+	padding-right:0.3rem;
 }
 /*.ListDiv{overflow-y: auto;}*/
 /*.wageTitle li,.wageTitle li span.placeTxt,.wageTitle li span.lable{
