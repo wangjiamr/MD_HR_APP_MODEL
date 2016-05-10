@@ -505,13 +505,25 @@ label.text {
 .Icon-next,
 .Icon-back,
 .Icon-off ,
-.Icon-txt{
+.Icon-txt,.Icon-de{
 	width: 50px;
 	height: 50px;
 	background-image: url(../img/icon-more.png);
 	position: absolute;
 	background-size:40%;
 	z-index: 3;
+}
+.Icon-de{
+	width:30px;
+	height:30px;
+	background-image: url(../img/icon-de.png);
+	background-repeat: no-repeat;
+	background-size:50%;
+	background-position: center;
+	position: absolute;
+	right:10px;
+	bottom:1px;
+	opacity: 0.6;
 }
 .Icon-txt{
 	right:0;

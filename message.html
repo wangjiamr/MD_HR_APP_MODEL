@@ -10,101 +10,54 @@
 	<script>document.documentElement.style.fontSize = document.documentElement.clientWidth / 7.5 + 'px';</script>
 </head>
 <body>
-		<header class="header current">
-			<span class="Icon Icon-back"></span>
-			<p>消息提醒</p>
-			<span class="Icon-txt font16">已读</span>
-		</header>
-		<div class="main" style="top:50px;">
-			<div class="message_box" title="删除先加remove，在把dom删除" style="left:0;">
-				<span class="btn btn-delete">删 除</span>
-				<div class="message_inner" id="inp">
-					<span class="userPhoto"><img src="img/1.jpg"></span>
-					<p class="alignright clearfix title">
-						<span class="font14 floatleft">生日提醒</span>
-						<span class="font12 color-a">2015-8-5  13:52</span>
-					</p>
-					<p class="font14 color-8 mart5"><span class="color-info marr5 strong">Anna Swift</span>将在8-15过生日。</p>
-					<p class="font14 color-8">还剩10天哦！</p>
-				</div>
+	<header class="header current">
+		<span class="Icon Icon-back"></span>
+		<p>消息提醒</p>
+		<span class="Icon-txt font16">已读</span>
+	</header>
+	<div class="main" style="top:50px;">
+		<div class="message_box" title="删除先加remove，在把dom删除" style="left:0;">
+			<!--<span class="btn btn-delete">删 除</span>-->
+			<i class="Icon-de"></i>
+			<div class="message_inner" id="inp">
+				<span class="userPhoto"><img src="img/1.jpg"></span>
+				<p class="alignright clearfix title">
+					<span class="font14 floatleft">生日提醒</span>
+					<span class="font12 color-a">2015-8-5  13:52</span>
+				</p>
+				<p class="font14 color-8 mart5"><span class="color-info marr5 strong">Anna Swift</span>将在8-15过生日。</p>
+				<p class="font14 color-8">还剩10天哦！</p>
 			</div>
 		</div>
+		<div class="message_box" title="删除先加remove，在把dom删除" style="left:0;">
+			<!--<span class="btn btn-delete">删 除</span>-->
+			<i class="Icon-de"></i>
+			<div class="message_inner" id="inp">
+				<span class="userPhoto"><img src="img/1.jpg"></span>
+				<p class="alignright clearfix title">
+					<span class="font14 floatleft">生日提醒</span>
+					<span class="font12 color-a">2015-8-5  13:52</span>
+				</p>
+				<p class="font14 color-8 mart5"><span class="color-info marr5 strong">Anna Swift</span>将在8-15过生日。</p>
+				<p class="font14 color-8">还剩10天哦！</p>
+			</div>
+		</div>
+		<div class="message_box" title="删除先加remove，在把dom删除" style="left:0;">
+			<!--<span class="btn btn-delete">删 除</span>-->
+			<i class="Icon-de"></i>
+			<div class="message_inner" id="inp">
+				<span class="userPhoto"><img src="img/1.jpg"></span>
+				<p class="alignright clearfix title">
+					<span class="font14 floatleft">生日提醒</span>
+					<span class="font12 color-a">2015-8-5  13:52</span>
+				</p>
+				<p class="font14 color-8 mart5"><span class="color-info marr5 strong">Anna Swift</span>将在8-15过生日。</p>
+				<p class="font14 color-8">还剩10天哦！</p>
+			</div>
+		</div>
+	</div>
 </body>
 <script type="text/javascript" src="js/jquery.js" ></script>
-<!--<script type="text/javascript" src="js/touch.js" ></script>-->
-<script type="text/javascript">
-	var $message_box = $('.message_box'),
-		$w = document.documentElement.clientWidth,
-		firstY = 0,
-		finishY = 0,
-		firstX = 0,
-		finishX = 0,
-		startX = 0,
-		startY = 0;
-	function touchStart(event){
-		startX = event.touches[0].clientX;
-		startY = event.touches[0].clientY;
-		firstX = startX;
-		firstY = startY;
-	}
-	function touchMove(event){
-		var touches = event.touches[0],
-			endX = touches.clientX,
-			endY = touches.clientY;
-		event.preventDefault();
-		finishX = endX;
-		finishY = endY;
-		var absX = Math.abs(endX - startX),
-			absY = Math.abs(endY - startY);
-		var CurLeft = parseInt($message_box.css('left'));//当前给css付的值
-		if(absX<absY){
-			startY = startX;
-			return;
-		}else{
-			if(endX > startX){
-				$message_box.css({'left':(endX)+'px'});
-				
-			}else{
-				$message_box.css({'left':(-endX)+'px'});
-				console.log(absX);
-			}
-			startX = endX;
-		}
-	}
-	function touchEnd(event){
-		if(finishY = firstX){
-			return;
-		}else{
-			var CurLeft = parseInt($message_box.css('left'));//当前给css付的值
-		}
-		firstY = 0;
-		finishY = 0;
-		firstX = 0;
-		finishX = 0;
-		startX = 0;
-		startY = 0;
-	}
-	
-	function bindTouch() {
-		$message_box.bind('touchstart', function() {
-			touchStart(event);
-		});
-		$message_box.bind('touchmove', function() {
-			touchMove(event);
-		});
-		$message_box.bind('touchend', function() {
-			touchEnd(event);
-		});
-	}
-	
-	bindTouch();
-	
-	function unbindTouch() {
-		$message_box.unbind('touchstart');
-		$message_box.unbind('touchmove');
-		$message_box.unbind('touchend');
-	}
-</script>
 </html>
 
 
