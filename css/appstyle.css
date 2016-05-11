@@ -505,13 +505,25 @@ label.text {
 .Icon-next,
 .Icon-back,
 .Icon-off ,
-.Icon-txt{
+.Icon-txt,.Icon-de{
 	width: 50px;
 	height: 50px;
 	background-image: url(../img/icon-more.png);
 	position: absolute;
 	background-size:40%;
 	z-index: 3;
+}
+.Icon-de{
+	width:30px;
+	height:30px;
+	background-image: url(../img/icon-de.png);
+	background-repeat: no-repeat;
+	background-size:50%;
+	background-position: center;
+	position: absolute;
+	right:10px;
+	bottom:1px;
+	opacity: 0.6;
 }
 .Icon-txt{
 	right:0;
@@ -601,6 +613,13 @@ label.text {
 	transition: 0.3s;
 	-webkit-transition: 0.3s;
 }
+.wage_out.current .nobg .Icon-arrow-t {
+	transform: rotate(180deg);
+	-webkit-transform: rotate(180deg);
+	right:inherit;
+	left:-0.2rem;
+}
+
 .icon-circle {
 	display: block;
 	width:4px;
@@ -945,6 +964,9 @@ label.text {
 }
 .inputList li.current span.lable{
 	color:#ef901b;
+}
+.wageTitle.inputList.nobg li span.lable{
+	text-indent:0.3rem;
 }
 .inputList li input,
 .inputList li .placeTxt,
@@ -1564,7 +1586,7 @@ body .main + .main.success{
 	transition: 0.1s;
 	-webkit-transition: 0.1s;
 }
-.wage_out.current .Icon-arrow-t {
+.wage_out.current .Icon-arrow-t,.wage_out.show .nobg .Icon-arrow-t{
 	transform: rotate(0deg);
 	-webkit-transform: rotate(0deg);
 }
@@ -1605,8 +1627,8 @@ body .main + .main.success{
 }
 .login_box p input {
 	float: left;
-	height:1rem;
-	line-height:1rem;
+	height:0.6rem;
+	line-height:0.6rem;
 	color: #888;
 	font-size:14px;
 	width: 100%;
@@ -1614,6 +1636,7 @@ body .main + .main.success{
 	background: none;
 	position:relative;
 	z-index: 2;
+	margin-top:0.25rem;
 }
 .login_box label{
 	color: #888;
@@ -1623,7 +1646,7 @@ body .main + .main.success{
 	right:0;
 	top:3px;
 	z-index:0;
-	line-height:1rem;
+	line-height:0.9rem;
 	font-size:14px;
 }
 .login_box p span {
@@ -1918,9 +1941,9 @@ body .main + .main.success{
 .current .Icon-phone{left:10%;transition:0.3s;}
 .bottom_txt{line-height:40px;border-bottom: 1px solid #ccc;z-index: 10;}
 .bottom_txt span{display:inline-block;width:26%;padding-right: 10px;}
-
-
-
+/*2016-5-11*/
+.wage_out .inputList.nobg + .inputList{display: none;}
+.wage_out.show .inputList.nobg + .inputList{display: block;}
 
 
 
