@@ -25,10 +25,12 @@
 						<span class="lable">2015-01</span>
 					</li>
 				</ul>
-				<div class="wage_out current" title="加current展开工资详细">
+				<div class="wage_out " title="加current展开工资详细">
 					<ul class="inputList wage nobg wageTitle">
 						<li class="clearfix">
+							<i class="Icon Icon-arrow-t"></i>
 							<span class="lable">税前收入</span>
+							<span class="alignright placeTxt color-plus">8,000.00</span>
 						</li>
 					</ul>
 					<ul class="inputList wage" style="display: ;">
@@ -46,10 +48,12 @@
 						</li>
 					</ul>
 				</div>
-				<div class="wage_out current" title="加current展开工资详细">
+				<div class="wage_out" title="加current展开工资详细">
 					<ul class="inputList wage nobg wageTitle">
 						<li class="clearfix">
-							<span class="lable">税前收入</span>
+							<i class="Icon Icon-arrow-t"></i>
+							<span class="lable">应缴金额</span>
+							<span class="alignright placeTxt color-plus">1,000.00</span>
 						</li>
 					</ul>
 					<ul class="inputList wage" style="display: ;">
@@ -68,25 +72,57 @@
 					</ul>
 				</div>
 			</div>
-			<div class="wage_out  current">
-			<ul class="inputList wage wageTitle ">
-				<li class="clearfix">
-					<span class="lable">2016-04</span>
-					<span class="alignright placeTxt"></span>
-				</li>
-			</ul>
+			<div class="wage_out">
+				<ul class="inputList wage wageTitle month_title">
+					<li class="clearfix">
+						<i class="Icon Icon-arrow-t"></i>
+						<span class="lable">2016-04</span>
+					</li>
+				</ul>
+				<div class="wage_out" title="加current展开工资详细">
+					<ul class="inputList wage nobg wageTitle">
+						<li class="clearfix">
+							<i class="Icon Icon-arrow-t"></i>
+							<span class="lable">税前收入</span>
+							<span class="alignright placeTxt color-plus">8,000.00</span>
+						</li>
+					</ul>
+					<ul class="inputList wage" style="display:;">
+						<li class="clearfix">
+							<span class="lable">基本工资</span>
+							<span class="alignright placeTxt color-plus">8,000.00</span>
+						</li>
+						<li class="clearfix">
+							<span class="lable">绩效工资</span>
+							<span class="alignright placeTxt color-plus">3,000.00</span>
+						</li>
+						<li class="clearfix">
+							<span class="lable">饭补</span>
+							<span class="alignright placeTxt color-minus">-500.00</span>
+						</li>
+					</ul>
+				</div>
 			</div>
 		</div>
 	</body>
 <script src="js/jquery.js"></script>
 <script type="text/javascript">
 	$(function(){
-		$('.month_title').off('touchend').on('touchend',function(){
+		$('.month_title').click(function(){
 			var $this = $(this);
 			if($this.parent().hasClass('current')){
 				$this.parent().removeClass('current');
 			}else{
 				$this.parent().addClass('current');
+			}
+		});
+		$('.nobg.wageTitle').click(function(){
+			var $this = $(this);
+			if($this.parent().hasClass('show')){
+				$this.parent().removeClass('show');
+			}else{
+				$this.parent().addClass('show');
+				$this.parent().siblings().removeClass('show');
 			}
 		});
 	});
