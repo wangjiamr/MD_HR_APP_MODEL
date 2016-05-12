@@ -42,6 +42,16 @@
       "img/icon-1.png",
       "img/icon-back.png",
       "js/jquery.js"
+    ],
+    "refer": []
+  },
+  "setting.html": {
+    "resources": [
+      "img/arrow-r.png",
+      "img/arrow-t.png",
+      "css/appstyle.css",
+      "img/1.jpg",
+      "img/icon-back.png"
     ]
   }
 }

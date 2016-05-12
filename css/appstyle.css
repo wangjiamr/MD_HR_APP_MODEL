@@ -613,7 +613,7 @@ label.text {
 	transition: 0.3s;
 	-webkit-transition: 0.3s;
 }
-.wage_out.current .nobg .Icon-arrow-t {
+.wage_out.open .nobg .Icon-arrow-t {
 	transform: rotate(180deg);
 	-webkit-transform: rotate(180deg);
 	right:inherit;
@@ -1008,6 +1008,7 @@ label.text {
 	height:0.8rem;
 	border-radius: 50%;
 }
+.inputList.month_title li span.placeTxt{line-height:1rem;padding-right:1rem;}
 .checkList li {
 	line-height: normal;
 }
@@ -1579,14 +1580,14 @@ body .main + .main.success{
 	overflow: hidden;
 	height: 0;
 }
-.wage_out.current .inputList:last-child {
+.wage_out.open .inputList:last-child {
 	height: auto;
 	overflow: visible;
 	-webkit-transform: translate(0, 0px);
 	transition: 0.1s;
 	-webkit-transition: 0.1s;
 }
-.wage_out.current .Icon-arrow-t,.wage_out.show .nobg .Icon-arrow-t{
+.wage_out.open .Icon-arrow-t,.wage_out.show .nobg .Icon-arrow-t{
 	transform: rotate(0deg);
 	-webkit-transform: rotate(0deg);
 }
@@ -1594,7 +1595,7 @@ body .main + .main.success{
 .month .wage_out ul{transition:0.3s;overflow: hidden;}
 .month .wage_out:last-child{border:0!important;}
 .month .wage_out .wage_out{display: none;}
-.month .wage_out.current .wage_out{display: block;}
+.month .wage_out.open .wage_out{display: block;}
 /*login page*/
 .login_layout {
 	background:url(../img/login_mask.png);
@@ -1873,7 +1874,7 @@ body .main + .main.success{
 	font-size:16px;
 }
 .choosenet{width:76%;background:#fff;position:absolute;left:50%;margin-left:-38%;z-index:300;border-radius:5px;top:50%;margin-top:-100px;font-size:14px;}
-.choosenet ul li{display:block;margin:0 13px;border-bottom:1px solid #ccc;height:40px;line-height:40px;text-indent:5px;position:relative;z-index:10;}
+.choosenet ul li{display:block;margin:0 13px;border-bottom:1px solid #ccc;height:0.8rem;line-height:0.8rem;text-indent:5px;position:relative;z-index:10;}
 .choosenet ul li:last-child{border-bottom:0;}
 .choosenet .quitBtn{display:block;height:40px;line-height:40px;color:#fff;background:#ef901b;border-radius:4px;margin:10px;position:relative;z-index:100;}
 .choosenet ul li.current{color:#ef901b;background: none;}
