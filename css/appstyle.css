@@ -622,7 +622,7 @@ label.text {
 	right:inherit;
 	left:-0.2rem;
 }
-.wage_out.current .month_title .Icon-arrow-t{
+.wage_out.current .month_title .Icon-arrow-t,.wage_li  .Icon-arrow-t{
 	transform: rotate(90deg);
 	-webkit-transform: rotate(90deg);
 }
@@ -1195,14 +1195,14 @@ label.text {
 	height: auto;
 	line-height: 0.8rem;
 }
-.wageTitle.inputList li span.lable{
+.wageTitle.inputList li span.lable,.wage_li span.lable{
 	text-indent:0;
 	font-size:14px;
 	min-height: 0;
 	height: auto;
 	line-height: 1rem;
 }
-.month .wage {
+.month .wage,.wage_li span.lable {
 	padding-left:0.4rem;
 }
 .wage li span.lable {
@@ -1951,7 +1951,7 @@ body .main + .main.success{
 /*2016-5-11*/
 .wage_out .inputList.nobg + .inputList{display: none;}
 .wage_out.show .inputList.nobg + .inputList{display: block;}
-
-
+.wage_li{height:1rem;line-height: 1rem;border:1px solid #d9d9d9;border-width:1px 0;background: #eee;position: relative;}
+.month .wage_li{margin-top:-1px;}
 
 
