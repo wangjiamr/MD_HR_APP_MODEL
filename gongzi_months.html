@@ -18,11 +18,12 @@
 			<span class="Icon-txt font16">年份</span>
 		</header>
 		<div class="main month" style="top:50px;">
-			<div class="wage_out " title="加current展开工资详细">
+			<div class="wage_out open" title="加current展开工资详细">
 				<ul class="inputList wage wageTitle month_title">
 					<li class="clearfix">
 						<i class="Icon Icon-arrow-t"></i>
 						<span class="lable">2015-01</span>
+						<span class="alignright placeTxt">8,000.00</span>
 					</li>
 				</ul>
 				<div class="wage_out " title="加current展开工资详细">
@@ -110,10 +111,10 @@
 	$(function(){
 		$('.month_title').click(function(){
 			var $this = $(this);
-			if($this.parent().hasClass('current')){
-				$this.parent().removeClass('current');
+			if($this.parent().hasClass('open')){
+				$this.parent().removeClass('open');
 			}else{
-				$this.parent().addClass('current');
+				$this.parent().addClass('open');
 			}
 		});
 		$('.nobg.wageTitle').click(function(){
