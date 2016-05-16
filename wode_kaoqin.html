@@ -12,14 +12,14 @@
 		</script>
 	</head>
 	<body>
-		<div class="main Ios_scroll">
-			<div class="TopBoard" style="height:auto;">
+		<div class="main success" style="overflow: hidden;">
+			<div class="TopBoard nobg">
 				<div class="BottomBar TopBar aligncenter clearfix font14">
 					<span>2015-7</span>
 					<span>2015-8</span>
 					<span>2015-9</span>
 				</div>
-				<div class="ClanderBar p-bt10" style="height:auto;">
+				<div class="ClanderBar" style="height:auto;position: absolute;bottom:0;top:0.9rem;">
 					<table class="ClanderTab">
 						<thead>
 							<tr>
@@ -146,55 +146,53 @@
 					</table>
 				</div>
 			</div>
-			<div class="ListDiv">
-				<ul class="ListItem">
-					<li class="border-1">
-						<p class="clearfix alignright">
-							<span class="font16 floatleft">加班</span>
-							<span class="Icon-arrow-t"></span>
-							<!--<span class="font14 color-6">5小时</span>-->
-						</p>
-						<dl>
-							<dd class="clearfix font14 alignright">
-								<p class="clearfix">
-									<span class="color-6 floatleft marr5">8-1</span>
-									<!--<span class="color-a">9 - 10 AM</span>-->
-								</p>
-								<p class="clearfix">
-									<span class="color-6 floatleft">8-4</span>
-									<span class="color-a">18 - 22 PM</span>
-								</p>
-								<p class="clearfix">
-									<span class="color-6 floatleft">8-1</span>
-									<span class="color-a">9 - 10 AM</span>
-								</p>
-								<p class="clearfix">
-									<span class="color-6 floatleft">8-4</span>
-									<span class="color-a">18 - 22 PM</span>
-								</p>
-							</dd>
-						</dl>
+			<div class="ListDiv Ios_scroll" style="height:52%;overflow-y: auto;">
+				<p class="mart20 marl20">考勤详情</p>
+				<ul class="inputList wage mart20">
+					<li class="clearfix">
+						<span class="lable">考勤数据来源</span>
+						<span class="alignright placeTxt color-a">APP打卡</span>
 					</li>
-					<li class="border-4">
-						<p class="clearfix alignright">
-							<span class="font16 floatleft">迟到</span>
-							<span class="Icon-arrow-t"></span>
-							<!--<span class="font14 color-6">2次</span>-->
-						</p>
-					</li>
-					<li class="border-3">
-						<p class="clearfix alignright">
-							<span class="font16 floatleft">请假</span>
-							<span class="Icon-arrow-t"></span>
-							<!--<span class="font14 color-6">1.5天</span>-->
-						</p>
+					<li class="clearfix">
+						<span class="lable">考勤班组</span>
+						<span class="alignright placeTxt color-a">上午9:00 - 下午6:00</span>
 					</li>
 				</ul>
+				<!--打开信息begin-->
+				<div class="Card">
+					<p class="title alignright">
+						<span class="floatleft font16 marl15">上班打卡</span>
+						<span class="inlineblock clearfix marr15">
+							<i class="Icon Icon-clock2"></i>
+							<em class="font14 marl5">08:56:34 AM</em>
+						</span>
+					</p>
+					<p class="line"></p>
+					<div class="item font14">
+						<div class="clearfix">
+							<div class="map_cover"></div>
+							<div class="map_mini floatleft marr10"><img src="img/img1.jpg"></div>
+							<p class="map_txt marr5 color-6">北京朝阳区八里庄路，西大望路华贸商务楼16号楼</p>
+							<span class="font13 map_set color-info">重新打卡</span>
+						</div>
+					</div>
+					<div class="item noboder nopadding">
+						<p class="color-6 p-top5">手机不知道怎么回事，实在是定位不上！</p>
+						<div class="map_img p-top10 clearfix">
+							<span class="floatleft"><img src="img/1.jpg"></span>
+						</div>
+					</div>
+					<div class="cardBottom"></div>
+				</div>
+				<!--打开信息over-->
+				<!--今天未打开begin-->
+				<p class="aligncenter font14 color-6 mart30 p-bt20">您今天尚未打卡，<span class="color-info">点击去打卡</span></p>
+				<!--今天未打开over-->
 			</div>
 		</div>
 		<!--<div class="mask" style="opacity: 0;"></div>-->
 		<!--浮层begin-->
-		<section class="moudle_pop view" title="加view显示">
+		<section class="moudle_pop " title="加view显示">
 			<p class="moudle_title aligncenter clearfix">
 				<span class="color-a floatleft">应出勤天数：<em class="color-3">24</em></span>
 				<span class="color-a floatleft">实际出勤天数：<em class="color-3">24</em></span>
