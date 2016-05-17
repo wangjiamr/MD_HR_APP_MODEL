@@ -729,13 +729,15 @@ label.text {
 	float: left;
 	transition: 0.2s;
 	-webkit-transition: 0.2s;
+	height:0.6rem;
+	line-height: 0.6rem;
+	margin-top: 0.15rem;
 }
-
 .TopBar span:first-child,
 .TopBar span:last-child {
 	color: #bbb;
 }
-
+.TopBar span:nth-child(2){background:#eee;}
 .Icon-1,
 .Icon-2,
 .Icon-3,
@@ -808,8 +810,8 @@ label.text {
 }
 .icon-circle {
 	display: block;
-	width: 4px;
-	height: 4px;
+	width: 3px;
+	height: 3px;
 	border-radius: 50%;
 	margin: 0 auto;
 	margin-top: -0.15rem;
@@ -819,7 +821,7 @@ label.text {
 }
 .work_normal{
 	width:10px;
-	height:4px;
+	height:3px;
 	border-radius:5px;
 	background: #28ad44;
 }
@@ -1149,7 +1151,10 @@ label.text {
 	line-height: 0.8rem;
 	position: relative;
 }
-
+.nobg .ClanderTab td p{
+	height: 0.7rem;
+	line-height: 0.7rem;
+}
 .ClanderUl li table td p:first-child {
 	color: #ccc;
 	padding: 0.1rem 0 0.2rem 0;
@@ -1158,9 +1163,9 @@ label.text {
 .ClanderUl li table td p:last-child span,
 .ClanderTab span {
 	display: inline-block;
-	width: 0.8rem;
-	height: 0.8rem;
-	line-height: 0.8rem;
+	width: 0.6rem;
+	height: 0.6rem;
+	line-height: 0.6rem;
 	border-radius: 50%;
 }
 
