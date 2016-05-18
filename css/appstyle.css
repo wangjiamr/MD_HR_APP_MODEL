@@ -20,7 +20,7 @@ body {
 	-webkit-user-select: none;
 	/*line-height: 1.6rem;*/
 	font-family: Tahoma, Arial;
-	background: #f8f8f8;
+	background: #f6f6f6;
 	position: relative;
 	overflow: auto;
 	font-size: 12px;
@@ -2846,13 +2846,14 @@ body .main + .main.success {
 	bottom:-100%;
 	z-index: 2;
 	box-shadow:0 0 10px #666;
-	transition:0.2s;
-	-webkit-transition:0.2s;
+	transition:0.4s;
+	-webkit-transition:0.4s;
 }
 .moudle_pop.view{
 	bottom:0;
-	transition:0.2s;
-	-webkit-transition:0.2s;
+	transition:0.4s;
+	-webkit-transition:0.4s;
+	z-index: 10;
 	}
 .moudle_title span{
 	display: inline-block;
