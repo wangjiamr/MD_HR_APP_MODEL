@@ -824,6 +824,9 @@ label.text {
 	height:3px;
 	border-radius:5px;
 	background: #28ad44;
+	position: absolute;
+	left:50%;
+	margin-left:-5px;
 }
 .work_special{
 	background:#ff8b00;
@@ -1191,11 +1194,11 @@ label.text {
 }
 
 .ClanderTab td.num,
-.ClanderTab tr td.future {
+.ClanderTab tr td.future,
+.ClanderTab tr td:first-child,
+.ClanderTab tr td:last-child{
 	color: #ccc;
 }
-/*.ClanderTab tr td:first-child,
-.ClanderTab tr td:last-child,*/
 .BtnItem {
 	/*position: absolute;*/
 	background: #fff;
