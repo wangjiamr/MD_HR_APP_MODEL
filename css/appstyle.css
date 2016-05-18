@@ -819,7 +819,7 @@ label.text {
 	font-size: 0;
 	line-height: 0;
 }
-.work_normal{
+.work_normal,.work_special,.color-leave,.color-rest,.color-work,.color-late{
 	width:10px;
 	height:3px;
 	border-radius:5px;
