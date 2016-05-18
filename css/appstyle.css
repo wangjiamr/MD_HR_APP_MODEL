@@ -1191,12 +1191,11 @@ label.text {
 }
 
 .ClanderTab td.num,
-.ClanderTab tr td:first-child,
-.ClanderTab tr td:last-child,
 .ClanderTab tr td.future {
 	color: #ccc;
 }
-
+/*.ClanderTab tr td:first-child,
+.ClanderTab tr td:last-child,*/
 .BtnItem {
 	/*position: absolute;*/
 	background: #fff;
