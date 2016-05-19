@@ -41,7 +41,8 @@
       "img/1.jpg",
       "img/icon-1.png",
       "img/icon-back.png",
-      "js/jquery.js"
+      "js/jquery.js",
+      "img/icon-de.png"
     ],
     "refer": []
   },
@@ -52,6 +53,7 @@
       "css/appstyle.css",
       "img/1.jpg",
       "img/icon-back.png"
-    ]
+    ],
+    "refer": []
   }
 }

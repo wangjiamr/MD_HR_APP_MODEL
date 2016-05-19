@@ -10,7 +10,7 @@
     "icons": {
         "72": "icon.png"
     },
-    "launch_path": "wode_kaoqin.html",/*应用的入口页面，默认为根目录下的index.html；支持网络地址，必须以http://或https://开头*/
+    "launch_path": "message.html",/*应用的入口页面，默认为根目录下的index.html；支持网络地址，必须以http://或https://开头*/
     "developer": {
         "name": "",/*开发者名称*/
         "email": "",/*开发者邮箱地址*/
@@ -274,7 +274,8 @@
 					"img/1.jpg",
 					"img/icon-1.png",
 					"img/icon-back.png",
-					"js/jquery.js"
+					"js/jquery.js",
+					"img/icon-de.png"
 				],
 				"refer": [],
 				"priority": 0
