@@ -648,7 +648,7 @@ label.text {
 .Icon-back,
 .Icon-off,
 .Icon-txt,
-.Icon-de {
+.Icon-de,.Icon-select {
 	width: 50px;
 	height: 50px;
 	background-image: url(../img/icon-more.png);
@@ -656,7 +656,7 @@ label.text {
 	background-size: 40%;
 	z-index: 3;
 }
-
+.Icon-select{background-image: url(../img/icon-5.png);right: 0;top:0;background-size:42%;}
 .Icon-de {
 	width: 30px;
 	height: 30px;
