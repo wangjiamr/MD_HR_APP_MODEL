@@ -2875,5 +2875,34 @@ body .main + .main.success {
 .moudle_inner .month_title{
 	border-bottom:1px solid #ccc;
 }
+.select{
+	background: none;
+	border: 0;
+	outline: 0;
+	opacity: 0;
+	-webkit-appearance:none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0); 
+}
+.select_top_r{
+	position: absolute;
+	top:0;
+	bottom:0;
+	right:0;
+	width: 100px;
+	z-index: 20;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
