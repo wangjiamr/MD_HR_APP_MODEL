@@ -640,8 +640,8 @@ label.text {
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: 50%;
+	z-index: 99;
 }
-
 .Icon-more,
 .Icon-prev,
 .Icon-next,
@@ -713,7 +713,9 @@ label.text {
 	left: initial;
 	right: 0;
 }
-
+.Icon-txt2{
+	width: 60px;
+}
 .TopBar .Icon-prev {
 	background-image: url(../img/prev2.png);
 }
@@ -2270,7 +2272,14 @@ body .main + .main.success {
 	overflow: hidden;
 	z-index: 10;
 }
-
+.check_side{
+	width:80%;
+	height:60%;
+	position: fixed;
+	left:50%;
+	top:50%;
+	margin:-40% 0 0 -40%;
+}
 .checkMenu .menuItem {
 	width: 100%;
 	height: 100%;
@@ -2891,7 +2900,10 @@ body .main + .main.success {
 	width: 100px;
 	z-index: 20;
 }
-
+.select_main{
+	position: absolute;
+	/*display: none;*/
+}
 
 
 

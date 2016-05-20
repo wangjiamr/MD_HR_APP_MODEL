@@ -55,5 +55,13 @@
       "img/icon-back.png"
     ],
     "refer": []
+  },
+  "my_team2.html": {
+    "resources": [
+      "css/appstyle.css",
+      "img/1.jpg",
+      "img/icon-back.png",
+      "js/jquery.js"
+    ]
   }
 }
