@@ -10,7 +10,7 @@
     "icons": {
         "72": "icon.png"
     },
-    "launch_path": "message.html",/*应用的入口页面，默认为根目录下的index.html；支持网络地址，必须以http://或https://开头*/
+    "launch_path": "home.html",/*应用的入口页面，默认为根目录下的index.html；支持网络地址，必须以http://或https://开头*/
     "developer": {
         "name": "",/*开发者名称*/
         "email": "",/*开发者邮箱地址*/
@@ -290,6 +290,16 @@
 				],
 				"refer": [],
 				"priority": 0
+			},
+			"my_team2.html": {
+				"resources": [
+					"css/appstyle.css",
+					"img/1.jpg",
+					"img/icon-back.png",
+					"js/jquery.js"
+				],
+				"refer": [],
+				"priority": 0
 			}
 		},
 		"idle": {
@@ -313,7 +323,6 @@
 				"choose-month.html",
 				"img/bottom-x.png",
 				"img/Fingerprint.png",
-				"my_team2.html",
 				"wode_kaoqin.html",
 				"gongzi_yzm.html",
 				"img/map.png",
