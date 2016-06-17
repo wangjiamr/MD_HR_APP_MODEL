@@ -2351,6 +2351,7 @@ body .main + .main.success {
 	border-bottom: 1px solid #f6f6f6;
 	height: 1rem;
 	line-height: 1rem;
+	width:107%;
 }
 
 .message_box .btn-delete {
