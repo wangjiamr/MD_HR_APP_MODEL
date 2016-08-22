@@ -984,13 +984,13 @@ label.text {
 	/*background: #ef901b;*/
 	/*margin-top: -4.17rem;*/
 	bottom: 0;
-	-webkit-transform: translate(100%, 0);
+	/*-webkit-transform: translate(100%, 0);*/
 }
 
-.header.active .headerItem:first-child {
+/*.header.active .headerItem:first-child {
 	-webkit-transform: translate(-100%, 0);
 	transition: 0.2s;
-	-webkit-transition: 0.2s;
+	-webkit-transition: 0.2s;*/
 }
 
 .header.active .headerItem:last-child {
@@ -2351,6 +2351,7 @@ body .main + .main.success {
 	border-bottom: 1px solid #f6f6f6;
 	height: 1rem;
 	line-height: 1rem;
+	width:107%;
 }
 
 .message_box .btn-delete {
@@ -2902,7 +2903,7 @@ body .main + .main.success {
 }
 .select_main{
 	position: absolute;
-	/*display: none;*/
+	display: none;
 }
 
 
